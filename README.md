@@ -1,13 +1,4 @@
-# understrap-child
-Basic Child Theme for UnderStrap Theme Framework: https://github.com/holger1411/understrap
-
-## How it works
-It shares with the parent theme all PHP files and adds its own functions.php on top of the UnderStrap parent themes functions.php.
-
-IT DID NOT LOAD THE PARENT THEMES CSS FILE(S)!
-Instead it uses the UnderStrap Parent Theme as dependency via npm and compiles its own CSS file from it.
-
-Uses the Enqueue method the load and sort the CSS file the right way instead of the old @import method.
+# Team-bet
 
 ## Installation
 1. Install the parent theme UnderStrap first: https://github.com/holger1411/understrap
