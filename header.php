@@ -73,6 +73,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 					)
 				); ?>
 			<?php if ( 'container' == $container ) : ?>
+            <a href="inscription" class="btn btn-success my-2 my-sm-0">INSCRIPTION</a>
 			</div><!-- .container -->
 			<?php endif; ?>
 
