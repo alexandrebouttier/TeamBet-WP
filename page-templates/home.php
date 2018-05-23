@@ -104,7 +104,7 @@ get_header();
 <div class="container">
     <h3 class="section-title">Nos derniers résultats</h3>
     <div class="row">
-        <div class="table-responsive">
+        <div class="table-responsive wow bounceInUp">
             <table class="table">
                 <thead>
                     <tr>
@@ -133,7 +133,7 @@ get_header();
                        
                         <td><?php the_field('date_du_match');?></td>
                         <td>
-                        <?php the_field('choix_de_pari');?>
+                        <?php the_field('choix_de_pari');?> <br>
                         <?php the_field('pronostic');?>
                         
                         </td>
@@ -162,6 +162,7 @@ get_header();
            
              <?php endif;?>
              <?php endwhile;?>
+            
                 </tbody>
             </table>
         </div>
@@ -174,6 +175,38 @@ get_header();
 </div>
 </section>
 <!-- // Fin Lastbets -->
+
+
+    <!-- Début ads subscription -->
+    <section id="ads_subscription">
+        <div class="container">
+
+            <div class="row">
+                <div class="col-md-6 center">
+
+                    <div class="bloc center wow fadeInUp ">
+                 
+                        <h4><?php the_field('titre_pub');?> </h4>
+                        <p></p>
+                        <span class="price"></span>
+                        <div class="center">
+                            <a href="inscription" class="btn btn-yellow">S'ABONNER</a>
+
+                        </div>
+                        <!-- // bloc -->
+                    </div>
+
+
+                    <!-- // col -->
+                </div>
+                <!-- // row -->
+            </div>
+            <!-- // container -->
+        </div>
+
+
+    </section>
+    <!-- // Fin ads subscription -->
 <?php
 get_footer();
 ?>

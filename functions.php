@@ -14,11 +14,14 @@ add_action( 'wp_enqueue_scripts', 'theme_enqueue_styles' );
 function theme_enqueue_styles() {
 
 	// Get the theme data
-	$the_theme = wp_get_theme();
+    $the_theme = wp_get_theme();
+    wp_enqueue_style('animateCSS', get_stylesheet_directory_uri() . '/css/animate.min.css', array(), '1.0.0', 'all');
     wp_enqueue_style( 'child-understrap-styles', get_stylesheet_directory_uri() . '/css/child-theme.min.css', array(), $the_theme->get( 'Version' ) );
     wp_enqueue_script( 'jquery');
 	wp_enqueue_script( 'popper-scripts', get_template_directory_uri() . '/js/popper.min.js', array(), false);
     wp_enqueue_script( 'child-understrap-scripts', get_stylesheet_directory_uri() . '/js/child-theme.min.js', array(), $the_theme->get( 'Version' ), true );
+    wp_enqueue_script( 'wow', get_stylesheet_directory_uri() . '/js/wow.min.js', array(), true);
+    wp_enqueue_script( 'app', get_stylesheet_directory_uri() . '/js/app.js', array(), true);
     if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
         wp_enqueue_script( 'comment-reply' );
     }

@@ -1,0 +1,59 @@
+/*========================== ads_subscription========================== */
+
+#ads_subscription {
+    background-color: #ecf0f1;
+    color: black;
+}
+
+#ads_subscription .bloc {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+#ads_subscription h4 {
+    margin-top: 1em;
+    font-size: 2.5em;
+    font-weight: 500;
+    margin-bottom: 0.5em;
+}
+
+#ads_subscription p {
+    font-size: 1.5em;
+    margin-bottom: 0rem !important;
+    font-style: italic;
+}
+
+#ads_subscription .price {
+    color: #e74c3c;
+    font-size: 4em;
+}
+
+#ads_subscription .btn {
+    height: 75px;
+    width: 225px;
+    margin-bottom: 2em;
+    vertical-align: middle;
+    line-height: 65px;
+}
+
+#ads_subscription a.btn.btn-yellow {
+    font-size: 1.8em;
+}
+
+@media screen and (max-width: 768px) {
+    #ads_subscription .price {
+        font-size: 2.8em;
+    }
+    #ads_subscription h4 {
+        font-size: 2em;
+    }
+    #ads_subscription p {
+        font-size: 1.2em;
+    }
+    #ads_subscription .btn {
+        height: 60px;
+        width: 180px;
+        line-height: 55px;
+    }
+}
