@@ -1,0 +1,26 @@
+#team .card {
+    margin: 0 auto;
+    margin-bottom: 1.5em;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    border-radius: 8px;
+    background-color: #34495e;
+    color: white;
+}
+
+#team .card-img {
+    width: 50%;
+    border-radius: calc(.25rem - 1px);
+    margin-top: 1em;
+    border-radius: 100%;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+#team .card-title {
+    font-family: 'Roboto-bold';
+    font-size: 1.1em;
+}
+
+#team .card-text {
+    font-family: 'Roboto-light';
+    font-size: 1em;
+}
