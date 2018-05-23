@@ -86,7 +86,7 @@
                                 <div class="cote">
                                     <span>Côte</span>
                                     <span>
-                                        <b><?php the_field('cote');?></b>
+                                        <b><?php the_field('côte');?></b>
                                     </span>
                                 </div>
                             </div>
