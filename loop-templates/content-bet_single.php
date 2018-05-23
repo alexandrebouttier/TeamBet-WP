@@ -90,15 +90,20 @@
                                 </div>
                             </div>
                              <!-- // tab-->
-
-
-                            <div class="analyse">
-                                <span>
-                                    <b>Mon analyse:</b>
-                                </span>
-                                <p><?php the_field('analyse');?></p>
-                            </div>
-
+						<?php
+						$analyse = get_field('analyse');
+   						if (!empty($analyse) ){ 
+	 						  ?>
+							<div class="analyse">
+								<span>
+									<b>Mon analyse:</b>
+								</span>
+								<p><?php the_field('analyse');?></p>
+							</div>
+							<?php
+   						}
+						?>
+                         
                         </div>
 
 </article><!-- #post-## -->
