@@ -8,37 +8,69 @@
 ?>
 <article <?php post_class(); ?> id="post-<?php the_ID(); ?>">
 
-	<header class="entry-header">
+	    <div class="bet">
+                        <div class="header">
+                            <img class="img-fluid" src="assets/img/alexandre_bouttier.jpg" alt="">
+                            <div class="post_info">
+                               <?php understrap_posted_on(); ?>
+                                <a href="abonnements.html" class="btn btn-outline-info">RETOUR</a>
+                            </div>
+                          
 
-		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+                        </div>
 
-		<div class="entry-meta">
-<h1> COUCOUCEDEDEDEDED</h1>
-			<?php understrap_posted_on(); ?>
+                        <div class="body">
+                            <div class="header">
+                                <span>Type de pari: <?php the_field('type_de_pari_');?></span>
+                            </div>
 
-		</div><!-- .entry-meta -->
+                            <div class="tab">
+                                <div class="statut">
+                                        <span>Statut:</span>
+                                        <img class="img-result"src="assets/img/win.png" alt="">
+                                </div>
+                            
+                               
+                                <div class="match">
+                                <img class="img-sport"src="assets/img/football.png" alt="">
+                                   
+                                    <span># <?php the_field('competition');?> #</span>
+                                    <span>Real Madrid - Liverpool</span>
 
-	</header><!-- .entry-header -->
+                                    <span class="date_match"><?php the_field('date_du_match');?> à <?php the_field('heure_du_match');?></span>
 
-	<?php echo get_the_post_thumbnail( $post->ID, 'large' ); ?>
+                                    <div class="select">
+                                        <span>Pronostic:</span>
+                                        <span><?php the_field('choix_de_pari');?></span>
+                                        <span>
+                                            <b><?php the_field('pronostic');?></b>
+                                        </span>
+                                    </div>
+                                </div>
+                            
+                                <div class="confiance">
+                                    <span>Confiance</span>
+                                    <span>
+                                        <b><?php the_field('confiance');?>%</b>
+                                    </span>
+                                </div>
+                                <div class="cote">
+                                    <span>Côte</span>
+                                    <span>
+                                        <b><?php the_field('cote');?></b>
+                                    </span>
+                                </div>
+                            </div>
+                             <!-- // tab-->
 
-	<div class="entry-content">
 
-		<?php the_content(); ?>
+                            <div class="analyse">
+                                <span>
+                                    <b>Mon analyse:</b>
+                                </span>
+                                <p><?php the_field('analyse');?></p>
+                            </div>
 
-		<?php
-		wp_link_pages( array(
-			'before' => '<div class="page-links">' . __( 'Pages:', 'understrap' ),
-			'after'  => '</div>',
-		) );
-		?>
-
-	</div><!-- .entry-content -->
-
-	<footer class="entry-footer">
-
-		<?php understrap_entry_footer(); ?>
-
-	</footer><!-- .entry-footer -->
+                        </div>
 
 </article><!-- #post-## -->

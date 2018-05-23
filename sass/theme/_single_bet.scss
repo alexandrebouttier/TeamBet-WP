@@ -1,0 +1,131 @@
+.bet {
+    margin: 0 auto;
+    margin-bottom: 1.8em;
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    height: auto;
+}
+
+.bet .header {
+    height: auto;
+    display: flex;
+    flex-direction: row;
+}
+
+.bet .header img {
+    border-radius: 100%;
+    margin-top: 0.8em;
+    margin-bottom: 0.8em;
+    margin-left: 0.8em;
+    margin-right: 0.8em;
+    max-height: 85px;
+}
+
+.bet .author {
+    font-size: 1.4em;
+}
+
+.bet .date {
+    font-size: 1em;
+}
+
+.bet .body {
+    display: flex;
+    flex-direction: column;
+    padding: 1em;
+    margin-top: 1em;
+    background-color: #ffff;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+.bet .analyse {
+    margin-top: 1em;
+}
+
+.bet .body .header {
+    background-color: #28A745;
+    color: white;
+    padding: 0.5em;
+}
+
+.bet .post_info {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1.8em;
+}
+
+.bet .statut {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.bet .select {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1em;
+}
+
+.bet .tab {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 1em;
+    margin-left: 0.8em;
+    padding: 0.5em;
+    border: 1px solid #e6e6e6;
+    background-color: #f8f9fa;
+}
+
+.bet .date_match {
+    font-size: 0.9em;
+}
+
+.bet .match {
+    margin-top: 1em;
+    display: flex;
+    flex-direction: column;
+    margin-right: 1em;
+    margin-left: 1em;
+}
+
+.bet .confiance {
+    margin-top: 1em;
+    display: flex;
+    flex-direction: column;
+    margin-left: 1em;
+}
+
+.bet .cote {
+    margin-top: 1em;
+    display: flex;
+    flex-direction: column;
+    margin-left: 1em;
+}
+
+.bet .img-result {
+    max-height: 30px;
+    width: 30px;
+}
+
+.bet .img-sport {
+    margin-top: 1em;
+    max-height: 20px;
+    width: 20px;
+}
+
+@media screen and (max-width: 768px) {
+    .bet .cote {
+        margin-left: 1em;
+    }
+    .bet .confiance {
+        margin-left: 0em;
+    }
+    .bet .match {
+        margin-left: 0em;
+    }
+    .bet .tab {
+        margin-left: 0em;
+    }
+}
