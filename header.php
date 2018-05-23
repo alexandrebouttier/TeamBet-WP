@@ -10,16 +10,42 @@
 $container = get_theme_mod( 'understrap_container_type' );
 ?>
 <!DOCTYPE html>
+<html xmlns="http://ogp.me/ns#" lang="fr">
 <html <?php language_attributes(); ?>>
 <head>
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
+	<meta lang="fr" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	 <!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-46924947-5"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+        gtag('config', 'UA-46924947-5');
+    </script>
 	<meta name="mobile-web-app-capable" content="yes">
 	<meta name="apple-mobile-web-app-capable" content="yes">
 	<meta name="apple-mobile-web-app-title" content="<?php bloginfo( 'name' ); ?> - <?php bloginfo( 'description' ); ?>">
 	<link rel="profile" href="http://gmpg.org/xfn/11">
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
+	<meta name="keywords" content="tipster, tipsters, pari sportif, sport, football,tennis,rugby, basket-ball,bets,bet,unibet,betclic,pronostic,foot,argent" />
+	    <!-- Facebook Open graph  -->
+	<meta property="og:title" content="Team-Bet plateforme de tipsters de paris sportifs" />
+    <meta property="og:site_name" content="Team-Bet plateforme de tipsters de paris sportifs" />
+    <meta property="og:locale" content="fr_FR" />
+    <meta property="og:url" content="https://www.teambet.fr" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://www.teambet.fr/og-image.png" />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:image:alt" content="Logo du site web Team-Bet" />
+    <meta property="og:image:width" content="600" />
+    <meta property="og:image:height" content="315" />
+    <meta property="og:description" content="Plateforme de tipsters de paris sportifs" />
+    <meta property="fb:app_id" content="1902889856687684" />
 	<?php wp_head(); ?>
 </head>
 
@@ -32,7 +58,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 		<a class="skip-link screen-reader-text sr-only" href="#content"><?php esc_html_e( 'Skip to content', 'understrap' ); ?></a>
 
-		<nav class="navbar navbar-expand-md navbar-light sticky-top bg-white">
+		<nav class="navbar navbar-expand-md navbar-light  bg-white">
 
 		<?php if ( 'container' == $container ) : ?>
 			<div class="container" >
