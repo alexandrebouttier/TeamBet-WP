@@ -10,6 +10,7 @@
 
 	    <div class="bet">
                         <div class="header">
+						<?php echo get_avatar( get_the_author()); ?>
                             <img class="img-fluid" src="assets/img/alexandre_bouttier.jpg" alt="">
                             <div class="post_info">
                                <?php understrap_posted_on(); ?>
@@ -26,8 +27,36 @@
 
                             <div class="tab">
                                 <div class="statut">
-                                        <span>Statut:</span>
-                                        <img class="img-result"src="assets/img/win.png" alt="">
+								<?php $resultat = get_field('statut');?>
+                                <?php
+                                if($resultat == "En attente"){
+                                    ?>
+                                   <span>Statut:</span>
+                                   <img class="img-result"src="http://www.teambet.fr/wp-content/uploads/2018/05/time.png" alt="">
+                                </span>
+                                    <?php
+                                }
+                                elseif($resultat == "Gagné"){
+                                    ?>
+                                    <span>Statut:</span>
+                                   <img class="img-result"src="http://www.teambet.fr/wp-content/uploads/2018/05/win.png" alt=""></span>
+                                    <?php
+                                }
+                                elseif($resultat == "Perdu"){
+                                    ?>
+                                    <span>Statut:</span>
+                                    <img class="img-result"src="http://www.teambet.fr/wp-content/uploads/2018/05/lose.png" alt="">
+                                 
+                                    <?php
+                                }
+                                elseif($resultat == "Rembourser"){
+                                    ?>
+                                    <span>Statut:</span>
+                                    <img class="img-result"src="http://www.teambet.fr/wp-content/uploads/2018/05/cancel.png" alt="">
+                                   
+                                    <?php
+                                }
+                                ?>
                                 </div>
                             
                                
