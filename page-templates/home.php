@@ -96,6 +96,84 @@ get_header();
 </div>
 </section>
 <!-- // Fin team-->
+
+
+<!-- Début Lastbets -->
+<section id="lastbets">
+
+<div class="container">
+    <h3 class="section-title">Nos derniers résultats</h3>
+    <div class="row">
+        <div class="table-responsive">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th scope="col">Tipster</th>
+                        <th scope="col">Match</th>
+                        <th scope="col">Date</th>
+                        <th scope="col">Pronostic</th>
+                        <th scope="col">Côte</th>
+                        <th scope="col">Résultat</th>
+                    </tr>
+                </thead>
+                <tbody>
+                <?php 
+                $the_query = new WP_Query('category_name=Pronostic&showposts=6&orderby=ASC');
+           while ($the_query->have_posts()) :
+           $the_query->the_post();
+           $resultat = get_field('statut');
+            if ($resultat != "En attente") : ?>
+                         <tr>
+                        <td>
+                        <?php the_author(); ?>
+                        </td>
+                        <td>
+                        <?php the_title();?>
+                        </td>
+                       
+                        <td><?php the_field('date_du_match');?></td>
+                        <td>
+                        <?php the_field('choix_de_pari');?>
+                        <?php the_field('pronostic');?>
+                        
+                        </td>
+                        <td><?php the_field('côte');?></td>
+                        <td>
+                        <?php $resultat = get_field('statut');?>
+                            <?php
+                            if($resultat == "Gagné"){
+                                ?>
+                               <img class="img-result"src="http://www.teambet.fr/wp-content/uploads/2018/05/win.png" alt="">
+                                <?php
+                            }
+                            elseif($resultat == "Perdu"){
+                                ?>
+                               <img class="img-result"src="http://www.teambet.fr/wp-content/uploads/2018/05/lose.png" alt="">
+                                <?php
+                            }
+                            elseif($resultat == "Rembourser"){
+                                ?>
+                               <img class="img-result"src="http://www.teambet.fr/wp-content/uploads/2018/05/cancel.png" alt="">
+                                <?php
+                            }
+                            ?>
+                        </td>
+           
+           
+             <?php endif;?>
+             <?php endwhile;?>
+                </tbody>
+            </table>
+        </div>
+        <!-- // row -->
+          <div style="margin-top:3em; margin-bottom:3em;"class="center">
+                <a href="pronostics" class="btn btn-success my-2 my-sm-0">PRONOSTICS EN COURS</a>
+            </div>
+    </div>
+    <!-- // container-->
+</div>
+</section>
+<!-- // Fin Lastbets -->
 <?php
 get_footer();
 ?>
