@@ -10,8 +10,7 @@
 
 	    <div class="bet">
                         <div class="header">
-						<?php echo get_avatar( get_the_author()); ?>
-                            <img class="img-fluid" src="assets/img/alexandre_bouttier.jpg" alt="">
+					
                             <div class="post_info">
                                <?php understrap_posted_on(); ?>
                                 <a href="abonnements.html" class="btn btn-outline-info">RETOUR</a>

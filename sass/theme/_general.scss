@@ -5,6 +5,20 @@ body{
 .center {
     margin: 0 auto;
 }
+.btn-yellow {
+    color: black;
+    background-color: #ffe71f;
+    border-color: #ffe71f;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    border-radius: 0;
+}
+
+.btn-yellow:hover {
+    color: black;
+    background-color: #FFEA45;
+    border-color: #FFEA45;
+    box-shadow: none;
+}
 /*========================== POLICES ========================== */
 .section-title {
     text-align: center;
