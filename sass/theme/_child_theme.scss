@@ -1,4 +1,31 @@
 body{
     background-color: #F5F5F5;
+    font-family: 'Roboto-regular';
 }
 
+/*========================== POLICES ========================== */
+
+@font-face {
+    font-family: 'Poiret';
+    src: url(../fonts/PoiretOne-Regular.ttf)
+}
+
+@font-face {
+    font-family: 'Roboto-regular';
+    src: url(../fonts/Roboto-Regular.ttf)
+}
+
+@font-face {
+    font-family: 'Roboto-light';
+    src: url(../fonts/Roboto-Light.ttf)
+}
+
+@font-face {
+    font-family: 'Roboto-bold';
+    src: url(../fonts/Roboto-Bold.ttf)
+}
+
+@font-face {
+    font-family: 'Roboto-italic';
+    src: url(../fonts/Roboto-Italic.ttf)
+}
