@@ -7,13 +7,21 @@
 
 ?>
 <div class="flex-container">
-<div class="bet_post">
-<article <?php post_class(); ?> id="post-<?php the_ID(); ?>">
+	
+
+	<?php
+	foreach( get_the_category() as $category ) {
+		if( 'Pronostic' == $category->cat_name ){
+			?>
+	<div class="bet_post">
+	<article <?php post_class(); ?> id="post-<?php the_ID(); ?>">
 
 	<header class="entry-header">
 
 		<?php the_title( sprintf( '<h2 class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ),
 		'</a></h2>' ); ?>
+		<span> Type de pari:<?php the_field('type_de_pari_');?></span><br>
+		<span> Compétition: # <?php the_field('competition');?> #</span>
 
 		<?php if ( 'post' == get_post_type() ) : ?>
 
@@ -45,4 +53,10 @@
 </article><!-- #post-## -->
 <!-- #betpost-## -->
 </div>
+<?php
+}
+
+}
+?>
+
 </div>

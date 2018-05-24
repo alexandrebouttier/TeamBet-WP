@@ -13,7 +13,7 @@
 					
                             <div class="post_info">
                                <?php understrap_posted_on(); ?>
-                                <a href="http://www.teambet.fr/pronostics" class="btn btn-outline-info">RETOUR</a>
+                                <a href="http://www.teambet.fr/pronostics" class="btn btn-success">RETOUR</a>
                             </div>
                           
 
