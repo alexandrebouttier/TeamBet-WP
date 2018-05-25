@@ -99,7 +99,7 @@ get_header();
 
 
 <!-- Début Lastbets -->
-<section id="lastbets">
+<section id="home_lastbets">
 
 <div class="container">
     <h3 class="section-title">Nos derniers résultats</h3>
