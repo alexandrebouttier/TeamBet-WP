@@ -114,7 +114,7 @@ get_header();
                         <?php the_author(); ?>
                         </td>
                         <td>
-                        <?php the_title();?>
+                        <?php the_field('adversaire_1');?> VS <?php the_field('adversaire_2');?>
                         </td>
                        
                         <td><?php the_field('date_du_match');?></td>

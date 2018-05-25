@@ -21,7 +21,7 @@
 
                         <div class="body">
                             <div class="header">
-                                <span>Type de pari: <?php the_field('type_de_pari_');?></span>
+                                <span>Type de pari: <?php the_field('choix_de_pari');?></span>
                             </div>
 
                             <div class="tab">
@@ -62,14 +62,13 @@
                                 <div class="match">
                                 <img class="img-sport"src="assets/img/football.png" alt="">
                                    
-                                    <span># <?php the_field('competition');?> #</span>
-                                    <span>Real Madrid - Liverpool</span>
+                                    <span><?php the_field('competition');?></span>
+                                    <span><b><?php the_field('adversaire_1');?> VS <?php the_field('adversaire_2');?></b></span>
 
                                     <span class="date_match"><?php the_field('date_du_match');?> à <?php the_field('heure_du_match');?></span>
 
                                     <div class="select">
                                         <span>Pronostic:</span>
-                                        <span><?php the_field('choix_de_pari');?></span>
                                         <span>
                                             <b><?php the_field('pronostic');?></b>
                                         </span>

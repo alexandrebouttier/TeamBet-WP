@@ -20,8 +20,8 @@
 
 		<?php the_title( sprintf( '<h2 class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ),
 		'</a></h2>' ); ?>
-		<span> Type de pari:<?php the_field('type_de_pari_');?></span><br>
-		<span> Compétition: # <?php the_field('competition');?> #</span>
+		<span>Sport: <?php the_field('sport');?></span>
+		<span>Compétition: <?php the_field('competition');?></span>
 
 		<?php if ( 'post' == get_post_type() ) : ?>
 
