@@ -10940,8 +10940,7 @@ li.nav-item:hover {
 
 /*========================== ads_subscription========================== */
 #ads_subscription {
-  background-color: #ecf0f1;
-  color: black; }
+  background-color: #ecf0f1; }
 
 #ads_subscription .bloc {
   display: -webkit-box;

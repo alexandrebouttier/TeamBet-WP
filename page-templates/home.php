@@ -188,7 +188,7 @@ get_header();
                  
                         <h4>N'attendez plus pour gagner...</h4>
                         <p>Choisissez le ou les tipsters de votre choix </p>
-                        <span class="price"><?php the_field('prix_ads');?>0€/mois</span>
+                        <span class="price"><?php the_field('prix_ads');?>20€/mois</span>
                         <div class="center">
                             <a href="inscription" class="btn btn-yellow">S'ABONNER</a>
 
