@@ -61,10 +61,10 @@ $container   = get_theme_mod( 'understrap_container_type' );
                                 <?php endif; ?>
                             </dl>
 
-                            <h2>
-                                <?php esc_html_e( 'Posts by', 'understrap' ); ?>
+                            <h4 class="text-center">
+                                <?php esc_html_e( 'Historique de', 'understrap' ); ?>
                                 <?php echo esc_html( $curauth->nickname ); ?> :
-                            </h2>
+                            </h4>
 
                     </header>
                     <!-- .page-header -->
@@ -98,6 +98,7 @@ $container   = get_theme_mod( 'understrap_container_type' );
                               $sport=$rugby;
                           }
                             if ($resultat != "En attente") : ?>
+                            <div class="row">
                         <div class="table-responsive">
                             <table class="table table-striped">
                                 <thead>
@@ -153,8 +154,8 @@ $container   = get_theme_mod( 'understrap_container_type' );
                                 </tbody>
                             </table>
                         </div>
-
-
+<!-- // row -->
+</div>
 
                         <?php endif;?>
                         <?php endwhile; ?>
