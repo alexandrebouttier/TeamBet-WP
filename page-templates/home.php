@@ -57,25 +57,7 @@ get_header();
     <div class="container">
         <h3 class="section-title">Notre team</h3>
         <div class="row">
-            <?php
-            $the_query = new WP_Query('category_name=Team&orderby=ASC');
-            while ($the_query->have_posts()) :
-                $the_query->the_post();
-                ?>
-                <div class="col-md-4">
-                    <div class="wow slideInRight animated card text-center" style="width: 18rem;">
-                        <img class="card-img center" src="<?php the_field('image_de_profil'); ?>"/>
-                        <div class="card-body">
-                            <h5 class="card-title"># <?php the_title(); ?></h5>
-                            <h6>Specialité(s)</h6>
-                            <p class="card-text"><?php the_field('specialites_'); ?></p>
-                            <a href="profil.html" class="btn btn-yellow my-2 my-sm-0">VOIR PROFIL</a>
-                        </div>
-                    </div>
-
-                    <!-- // Fin column -->
-                </div>
-            <?php endwhile; ?>
+            <?php showTeamHome();?>
             <!-- // row-->
         </div>
         <!-- // container-->
@@ -104,37 +86,7 @@ get_header();
                     </tr>
                     </thead>
                     <tbody>
-                    <?php
-                    $the_query = new WP_Query('category_name=Pronostic&showposts=11&orderby=ASC');
-                    while ($the_query->have_posts()) :
-                    $the_query->the_post();
-                    $resultat = get_field('statut');
-                    if ($resultat != "En attente") : ?>
-                    <tr>
-                        <td>
-                            <?php the_author(); ?>
-                        </td>
-                        <td><img class="sport_logo" src="<?php showIconSport(); ?>"></td>
-                        <td>
-                            <?php the_field('adversaire_1'); ?> VS <?php the_field('adversaire_2'); ?>
-                        </td>
-
-                        <td><?php the_field('date_du_match'); ?></td>
-                        <td>
-                            <?php the_field('choix_de_pari'); ?> <br>
-                            <?php the_field('pronostic'); ?>
-
-                        </td>
-                        <td><?php the_field('côte'); ?></td>
-                        <td>
-                        <img class="img-result" src="<?php showIconStatut(); ?>"  alt="">
-                        </td>
-
-
-                        <?php endif;
-                        ?>
-                        <?php endwhile; ?>
-
+                    <?php showLastBetsHome();?>
                     </tbody>
                 </table>
             </div>
@@ -160,7 +112,7 @@ get_header();
 
                     <h4>N'attendez plus pour gagner...</h4>
                     <p>Choisissez le ou les tipsters de votre choix </p>
-                    <span class="price"><?php the_field('prix_ads'); ?>20€/mois</span>
+                    <span class="price">20€/mois</span>
                     <div class="center">
                         <a href="inscription" class="btn btn-yellow">S'ABONNER</a>
 

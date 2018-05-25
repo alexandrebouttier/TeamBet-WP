@@ -21,28 +21,7 @@
                         <?php the_title(sprintf('<h2 class="entry-title"><a href="%s" rel="bookmark">', esc_url(get_permalink())),
                             '</a></h2>'); ?>
 
-                        <?php $getsport = get_field('sport');
-                        $football = "http://www.teambet.fr/wp-content/uploads/2018/05/football.png";
-                        $tennis = "http://www.teambet.fr/wp-content/uploads/2018/05/tennis.png";
-                        $basket = "http://www.teambet.fr/wp-content/uploads/2018/05/basketball.png";
-                        $rugby = "http://www.teambet.fr/wp-content/uploads/2018/05/rugby.png";
-                        $sport = "";
-                        if ($getsport == "Football") {
-                            $sport = $football;
-                        }
-                        if ($getsport == "Tennis") {
-                            $sport = $tennis;
-                        }
-                        if ($getsport == "Basket-ball") {
-                            $sport = $basket;
-                        }
-                        if ($getsport == "Rugby") {
-                            $sport = $rugby;
-                        }
-                        ?>
-
-
-                        <img class="sport_logo" src="<?php echo $sport; ?>" alt="">
+                        <img class="sport_logo" src="<?php showIconSport();?>" alt="">
                         <span>Compétition: <?php the_field('competition'); ?></span>
 
                         <?php if ('post' == get_post_type()) : ?>
