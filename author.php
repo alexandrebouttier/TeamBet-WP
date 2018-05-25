@@ -72,9 +72,10 @@ $container   = get_theme_mod( 'understrap_container_type' );
                     <ul>
 
                         <!-- The Loop -->
-                        <?php if ( have_posts() ) :
-                            
+                       
+                        <?php 
                             $the_query = new WP_Query('category_name=Pronostic');
+                           if ( have_posts() ) :
                             while ($the_query->have_posts()) : 
                                
                             $the_query->the_post();
@@ -132,6 +133,7 @@ $container   = get_theme_mod( 'understrap_container_type' );
                                         <?php the_field('côte');?>
                                     </td>
                                     <td>
+                                     
                         <?php $resultat = get_field('statut');?>
                             <?php
                             if($resultat == "Gagné"){
@@ -157,14 +159,15 @@ $container   = get_theme_mod( 'understrap_container_type' );
 <!-- // row -->
 </div>
 
-                        <?php endif;?>
+
+                        <?php  endif;?>
                         <?php endwhile; ?>
 
                         <?php else : ?>
 
-                        <?php get_template_part( 'loop-templates/content', 'none' ); ?>
+<?php get_template_part( 'loop-templates/content', 'none' ); ?>
 
-                        <?php endif; ?>
+<?php endif; ?>
 
                         <!-- End Loop -->
 
