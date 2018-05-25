@@ -57,39 +57,25 @@ get_header();
 <div class="container">
     <h3 class="section-title">Notre team</h3>
     <div class="row">
+    <?php 
+            $the_query = new WP_Query('category_name=Team&orderby=ASC');
+            while ($the_query->have_posts()) : 
+            $the_query->the_post();
+            ?>
         <div class="col-md-4">
             <div class="wow slideInRight animated card text-center" style="width: 18rem;">
-                <img class="card-img center" src="assets/img/alexandre_bouttier.jpg" alt="Card image cap">
+                    <img class="card-img center" src="<?php the_field('image_de_profil'); ?>" />
                 <div class="card-body">
-                    <h5 class="card-title"># Alex</h5>
-                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec iaculis mauris.</p>
+                    <h5 class="card-title"># <?php the_title();?></h5>
+                    <h6>Specialité(s)</h6>
+                    <p class="card-text"><?php the_field('specialites_'); ?></p>
                     <a href="profil.html" class="btn btn-yellow my-2 my-sm-0">VOIR PROFIL</a>
                 </div>
             </div>
+   
             <!-- // Fin column -->
         </div>
-        <div class="col-md-4">
-            <div class="wow slideInRight animated card text-center" style="width: 18rem;">
-                <img class="card-img center" src="assets/img/kevin_durand.jpg" alt="Card image cap">
-                <div class="card-body">
-                    <h5 class="card-title"># Kevin</h5>
-                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec iaculis mauris.</p>
-                    <a href="profil.html" class="btn btn-yellow my-2 my-sm-0">VOIR PROFIL</a>
-                </div>
-            </div>
-            <!-- // Fin column -->
-        </div>
-        <div class="col-md-4">
-            <div class="wow slideInRight animated card text-center" style="width: 18rem;">
-                <img class="card-img center" src="assets/img/tony_lopez.jpg" alt="Card image cap">
-                <div class="card-body">
-                    <h5 class="card-title"># Tony</h5>
-                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec iaculis mauris.</p>
-                    <a href="profil.html" class="btn btn-yellow my-2 my-sm-0">VOIR PROFIL</a>
-                </div>
-            </div>
-            <!-- // Fin column -->
-        </div>
+        <?php endwhile;?>
         <!-- // row-->
     </div>
     <!-- // container-->
