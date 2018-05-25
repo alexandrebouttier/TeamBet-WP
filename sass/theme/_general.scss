@@ -1,6 +1,6 @@
 body{
-    background-color: #F5F5F5;
-    font-family: 'Roboto-regular';
+    background-color: #ffff;
+    font-family: 'Opensans-regular';
 }
 .center {
     margin: 0 auto;
@@ -19,10 +19,7 @@ body{
     border-color: #FFEA45;
     box-shadow: none;
 }
-.table-responsive {
-    background-color: #ffff;
-    box-shadow: 0px 0px 20px 0px rgba(102, 51, 153, 0.20);
-}
+
 /*========================== POLICES ========================== */
 .section-title {
     text-align: center;
@@ -38,21 +35,25 @@ body{
 }
 
 @font-face {
-    font-family: 'Roboto-regular';
-    src: url(../fonts/Roboto-Regular.ttf)
+    font-family: 'Opensans-regular';
+    src: url(../fonts/OpenSans-Regular.ttf)
 }
 
 @font-face {
-    font-family: 'Roboto-light';
-    src: url(../fonts/Roboto-Light.ttf)
+    font-family: 'Opensans-light';
+    src: url(../fonts/OpenSans-Light.ttf)
 }
 
 @font-face {
-    font-family: 'Roboto-bold';
-    src: url(../fonts/Roboto-Bold.ttf)
+    font-family: 'Opensans-bold';
+    src: url(../fonts/OpenSans-Bold.ttf)
+}
+@font-face {
+    font-family: 'Opensans-semibold';
+    src: url(../fonts/OpenSans-SemiBold.ttf)
 }
 
 @font-face {
-    font-family: 'Roboto-italic';
-    src: url(../fonts/Roboto-Italic.ttf)
+    font-family: 'Opensans-italic';
+    src: url(../fonts/OpenSans-Italic.ttf)
 }

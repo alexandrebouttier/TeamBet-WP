@@ -105,15 +105,15 @@ get_header();
     <h3 class="section-title">Nos derniers résultats</h3>
     <div class="row">
         <div class="table-responsive wow bounceInUp">
-            <table class="table">
+            <table class="table table-striped">
                 <thead>
                     <tr>
-                        <th scope="col">Tipster</th>
-                        <th scope="col">Match</th>
-                        <th scope="col">Date</th>
-                        <th scope="col">Pronostic</th>
-                        <th scope="col">Côte</th>
-                        <th scope="col">Résultat</th>
+                        <th scope="col">TIPSTER</th>
+                        <th scope="col">ÉVÉNEMENT</th>
+                        <th scope="col">DATE</th>
+                        <th scope="col">SÉLECTION</th>
+                        <th scope="col">CÖTE</th>
+                        <th scope="col">RÉSULTAT</th>
                     </tr>
                 </thead>
                 <tbody>

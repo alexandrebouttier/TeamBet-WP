@@ -10773,8 +10773,8 @@ a.skip-link {
   display: block; }
 
 body {
-  background-color: #F5F5F5;
-  font-family: 'Roboto-regular'; }
+  background-color: #ffff;
+  font-family: 'Opensans-regular'; }
 
 .center {
   margin: 0 auto; }
@@ -10794,11 +10794,6 @@ body {
   -webkit-box-shadow: none;
           box-shadow: none; }
 
-.table-responsive {
-  background-color: #ffff;
-  -webkit-box-shadow: 0px 0px 20px 0px rgba(102, 51, 153, 0.2);
-          box-shadow: 0px 0px 20px 0px rgba(102, 51, 153, 0.2); }
-
 /*========================== POLICES ========================== */
 .section-title {
   text-align: center;
@@ -10813,20 +10808,24 @@ body {
   src: url(../fonts/PoiretOne-Regular.ttf); }
 
 @font-face {
-  font-family: 'Roboto-regular';
-  src: url(../fonts/Roboto-Regular.ttf); }
+  font-family: 'Opensans-regular';
+  src: url(../fonts/OpenSans-Regular.ttf); }
 
 @font-face {
-  font-family: 'Roboto-light';
-  src: url(../fonts/Roboto-Light.ttf); }
+  font-family: 'Opensans-light';
+  src: url(../fonts/OpenSans-Light.ttf); }
 
 @font-face {
-  font-family: 'Roboto-bold';
-  src: url(../fonts/Roboto-Bold.ttf); }
+  font-family: 'Opensans-bold';
+  src: url(../fonts/OpenSans-Bold.ttf); }
 
 @font-face {
-  font-family: 'Roboto-italic';
-  src: url(../fonts/Roboto-Italic.ttf); }
+  font-family: 'Opensans-semibold';
+  src: url(../fonts/OpenSans-SemiBold.ttf); }
+
+@font-face {
+  font-family: 'Opensans-italic';
+  src: url(../fonts/OpenSans-Italic.ttf); }
 
 .navbar img {
   max-height: 1.75rem;
@@ -10917,12 +10916,16 @@ li.nav-item:hover {
           box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24); }
 
 #team .card-title {
-  font-family: 'Roboto-bold';
+  font-family: 'Opensans-bold';
   font-size: 1.1em; }
 
 #team .card-text {
-  font-family: 'Roboto-light';
+  font-family: 'Opensans-light';
   font-size: 1em; }
+
+.table-responsive {
+  -webkit-box-shadow: 0px 0px 20px 0px rgba(102, 51, 153, 0.2);
+          box-shadow: 0px 0px 20px 0px rgba(102, 51, 153, 0.2); }
 
 /*========================== ads_subscription========================== */
 #ads_subscription {
