@@ -26,3 +26,52 @@ function theme_enqueue_styles() {
         wp_enqueue_script( 'comment-reply' );
     }
 }
+
+// Fonction qui affiche l'icone du sport du field ACF 'sport'
+function showIconSport(){
+    $url=get_site_url();
+   $pathFolderImg ="$url/wp-content/themes/teambet/img";
+    $getsport = get_field('sport');
+    $football = "$pathFolderImg/football.png";
+    $tennis = "$pathFolderImg/tennis.png";
+    $basket = "$pathFolderImg/basketball.png";
+    $rugby = "$pathFolderImg/rugby.png";
+    $sport = "";
+     if($getsport == "Football") {
+         $sport=$football;
+     }
+     if($getsport == "Tennis"){
+        $sport=$tennis;
+    }
+    if($getsport == "Basket-ball"){
+        $sport=$basket;
+    }
+    if($getsport == "Rugby"){
+        $sport=$rugby;
+    }
+    echo $sport;
+}
+// Fonction qui affiche l'icone du staut du pronostic du field ACF 'statut'
+function showIconStatut(){
+   $url=get_site_url();
+   $pathFolderImg ="$url/wp-content/themes/teambet/img";
+   $resultat = get_field('statut'); 
+   $wait="$pathFolderImg/time.png";
+   $win ="$pathFolderImg/win.png";
+   $lose ="$pathFolderImg/lose.png";
+   $cancel ="$pathFolderImg/cancel.png";
+   $statut ="";
+   
+    if ($resultat == "Gagné") {
+       $statut = $win;
+    } 
+    elseif ($resultat == "Perdu") {
+        $statut = $lose;
+    }elseif ($resultat == "Rembourser") {
+        $statut = $cancel;
+    }
+    elseif ($resultat == "En attente") {
+        $statut = $wait;
+    }
+    echo $statut;
+}

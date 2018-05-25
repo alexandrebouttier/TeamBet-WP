@@ -108,35 +108,13 @@ get_header();
                     $the_query = new WP_Query('category_name=Pronostic&showposts=11&orderby=ASC');
                     while ($the_query->have_posts()) :
                     $the_query->the_post();
-
-
-                    $getsport = get_field('sport');
-                    $football = "http://www.teambet.fr/wp-content/uploads/2018/05/football.png";
-                    $tennis = "http://www.teambet.fr/wp-content/uploads/2018/05/tennis.png";
-                    $basket = "http://www.teambet.fr/wp-content/uploads/2018/05/basketball.png";
-                    $rugby = "http://www.teambet.fr/wp-content/uploads/2018/05/rugby.png";
-                    $sport = "";
-                    if ($getsport == "Football") {
-                        $sport = $football;
-                    }
-                    if ($getsport == "Tennis") {
-                        $sport = $tennis;
-                    }
-                    if ($getsport == "Basket-ball") {
-                        $sport = $basket;
-                    }
-                    if ($getsport == "Rugby") {
-                        $sport = $rugby;
-                    }
-
-
                     $resultat = get_field('statut');
                     if ($resultat != "En attente") : ?>
                     <tr>
                         <td>
                             <?php the_author(); ?>
                         </td>
-                        <td><img class="sport_logo" src="<?php echo $sport; ?>"></td>
+                        <td><img class="sport_logo" src="<?php showIconSport(); ?>"></td>
                         <td>
                             <?php the_field('adversaire_1'); ?> VS <?php the_field('adversaire_2'); ?>
                         </td>
@@ -149,25 +127,7 @@ get_header();
                         </td>
                         <td><?php the_field('côte'); ?></td>
                         <td>
-                            <?php $resultat = get_field('statut'); ?>
-                            <?php
-                            if ($resultat == "Gagné") {
-                                ?>
-                                <img class="img-result" src="http://www.teambet.fr/wp-content/uploads/2018/05/win.png"
-                                     alt="">
-                                <?php
-                            } elseif ($resultat == "Perdu") {
-                                ?>
-                                <img class="img-result" src="http://www.teambet.fr/wp-content/uploads/2018/05/lose.png"
-                                     alt="">
-                                <?php
-                            } elseif ($resultat == "Rembourser") {
-                                ?>
-                                <img class="img-result"
-                                     src="http://www.teambet.fr/wp-content/uploads/2018/05/cancel.png" alt="">
-                                <?php
-                            }
-                            ?>
+                        <img class="img-result" src="<?php showIconStatut(); ?>"  alt="">
                         </td>
 
 

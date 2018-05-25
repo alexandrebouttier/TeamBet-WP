@@ -80,24 +80,7 @@ $container   = get_theme_mod( 'understrap_container_type' );
                                
                             $the_query->the_post();
                           $resultat = get_field('statut');
-                          $getsport = get_field('sport');
-                          $football = "http://www.teambet.fr/wp-content/uploads/2018/05/football.png";
-                          $tennis = "http://www.teambet.fr/wp-content/uploads/2018/05/tennis.png";
-                          $basket = "http://www.teambet.fr/wp-content/uploads/2018/05/basketball.png";
-                          $rugby = "http://www.teambet.fr/wp-content/uploads/2018/05/rugby.png";
-                          $sport = "";
-                           if($getsport == "Football"){
-                               $sport=$football;
-                           }
-                           if($getsport == "Tennis"){
-                              $sport=$tennis;
-                          }
-                          if($getsport == "Basket-ball"){
-                              $sport=$basket;
-                          }
-                          if($getsport == "Rugby"){
-                              $sport=$rugby;
-                          }
+                         
                             if ($resultat != "En attente") : ?>
                             <div class="row">
                         <div class="table-responsive">
@@ -114,7 +97,7 @@ $container   = get_theme_mod( 'understrap_container_type' );
                                 </thead>
                                 <tbody>
                                     <td>
-                                        <img class="sport_logo" src="<?php echo $sport;?>"> </td>
+                                        <img class="sport_logo" src="<?php showIconSport();?>"> </td>
                                     <td>
                                         <?php the_field('adversaire_1');?> VS
                                         <?php the_field('adversaire_2');?>
@@ -133,25 +116,8 @@ $container   = get_theme_mod( 'understrap_container_type' );
                                         <?php the_field('côte');?>
                                     </td>
                                     <td>
-                                     
-                        <?php $resultat = get_field('statut');?>
-                            <?php
-                            if($resultat == "Gagné"){
-                                ?>
-                               <img class="img-result"src="http://www.teambet.fr/wp-content/uploads/2018/05/win.png" alt="">
-                                <?php
-                            }
-                            elseif($resultat == "Perdu"){
-                                ?>
-                               <img class="img-result"src="http://www.teambet.fr/wp-content/uploads/2018/05/lose.png" alt="">
-                                <?php
-                            }
-                            elseif($resultat == "Rembourser"){
-                                ?>
-                               <img class="img-result"src="http://www.teambet.fr/wp-content/uploads/2018/05/cancel.png" alt="">
-                                <?php
-                            }
-                            ?>
+                               <img class="img-result"src="<?php showIconStatut();?>" alt="">
+                            
                         </td>
                                 </tbody>
                             </table>

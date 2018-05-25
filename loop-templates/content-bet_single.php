@@ -21,40 +21,14 @@
 
             <div class="tab">
                 <div class="statut">
-                    <?php $resultat = get_field('statut'); ?>
-                    <?php
-                    if ($resultat == "En attente") {
-                        ?>
                         <span>Statut:</span>
-                        <img class="img-result" src="http://www.teambet.fr/wp-content/uploads/2018/05/time.png" alt="">
+                        <img class="img-result" src="<?php showIconStatut(); ?>" alt="">
                         </span>
-                        <?php
-                    } elseif ($resultat == "Gagné") {
-                        ?>
-                        <span>Statut:</span>
-                        <img class="img-result" src="http://www.teambet.fr/wp-content/uploads/2018/05/win.png"
-                             alt=""></span>
-                        <?php
-                    } elseif ($resultat == "Perdu") {
-                        ?>
-                        <span>Statut:</span>
-                        <img class="img-result" src="http://www.teambet.fr/wp-content/uploads/2018/05/lose.png" alt="">
-
-                        <?php
-                    } elseif ($resultat == "Rembourser") {
-                        ?>
-                        <span>Statut:</span>
-                        <img class="img-result" src="http://www.teambet.fr/wp-content/uploads/2018/05/cancel.png"
-                             alt="">
-
-                        <?php
-                    }
-                    ?>
                 </div>
 
 
                 <div class="match">
-                    <img class="img-sport" src="assets/img/football.png" alt="">
+                
 
                     <span><?php the_field('competition'); ?></span>
                     <span><b><?php the_field('adversaire_1'); ?> VS <?php the_field('adversaire_2'); ?></b></span>
@@ -65,16 +39,16 @@
                     <div class="select">
                         <span>Pronostic:</span>
                         <span>
-                                            <b><?php the_field('pronostic'); ?></b>
-                                        </span>
+                            <b><?php the_field('pronostic'); ?></b>
+                            </span>
                     </div>
                 </div>
 
                 <div class="confiance">
                     <span>Confiance</span>
                     <span>
-                                        <b><?php the_field('confiance'); ?>%</b>
-                                    </span>
+                         <b><?php the_field('confiance'); ?>%</b>
+                    </span>
                 </div>
                 <div class="cote">
                     <span>Côte</span>
