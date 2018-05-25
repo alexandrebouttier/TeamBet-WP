@@ -95,6 +95,7 @@ get_header();
                 <thead>
                     <tr>
                         <th scope="col">TIPSTER</th>
+                        <th scope="col"></th>
                         <th scope="col">ÉVÉNEMENT</th>
                         <th scope="col">DATE</th>
                         <th scope="col">SÉLECTION</th>
@@ -107,12 +108,35 @@ get_header();
                 $the_query = new WP_Query('category_name=Pronostic&showposts=6&orderby=ASC');
            while ($the_query->have_posts()) :
            $the_query->the_post();
+
+          
+           $getsport = get_field('sport');
+           $football = "http://www.teambet.fr/wp-content/uploads/2018/05/football.png";
+           $tennis = "http://www.teambet.fr/wp-content/uploads/2018/05/tennis.png";
+           $basket = "http://www.teambet.fr/wp-content/uploads/2018/05/basketball.png";
+           $rugby = "http://www.teambet.fr/wp-content/uploads/2018/05/rugby.png";
+           $sport = "";
+            if($getsport == "Football"){
+                $sport=$football;
+            }
+            if($getsport == "Tennis"){
+               $sport=$tennis;
+           }
+           if($getsport == "Basket-ball"){
+               $sport=$basket;
+           }
+           if($getsport == "Rugby"){
+               $sport=$rugby;
+           }
+          
+
            $resultat = get_field('statut');
             if ($resultat != "En attente") : ?>
                          <tr>
                         <td>
                         <?php the_author(); ?>
                         </td>
+                        <td><img class="sport_logo" src="<?php echo $sport;?>"> </td>
                         <td>
                         <?php the_field('adversaire_1');?> VS <?php the_field('adversaire_2');?>
                         </td>
