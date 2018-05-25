@@ -105,7 +105,7 @@ get_header();
                 </thead>
                 <tbody>
                 <?php 
-                $the_query = new WP_Query('category_name=Pronostic&showposts=6&orderby=ASC');
+                $the_query = new WP_Query('category_name=Pronostic&showposts=11&orderby=ASC');
            while ($the_query->have_posts()) :
            $the_query->the_post();
 
