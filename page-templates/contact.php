@@ -13,17 +13,18 @@ get_header();
 
     <div class="container">
 
-        <h3 class="section-title"><?php the_title();?></h3>
+        <h3 class="section-title"><?php the_title(); ?></h3>
 
         <div class="row">
 
-          <div class="col-md-6 center">
+            <div class="col-md-6 center">
 
-          <form>
-           <?php the_post(); the_content();?>
-          </form>
+                <form>
+                    <?php the_post();
+                    the_content(); ?>
+                </form>
 
-      </div>
+            </div>
 
         </div>
 
