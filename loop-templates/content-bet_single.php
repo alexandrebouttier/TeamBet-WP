@@ -10,16 +10,11 @@
 
 	    <div class="bet">
                         <div class="header">
-					
-                            <div class="post_info">
-                               <?php understrap_posted_on(); ?>
                                 <a href="http://www.teambet.fr/pronostics" class="btn btn-success">RETOUR</a>
-                            </div>
-                          
-
                         </div>
 
                         <div class="body">
+                        <?php understrap_posted_on(); ?>
                             <div class="header">
                                 <span>Type de pari: <?php the_field('choix_de_pari');?></span>
                             </div>

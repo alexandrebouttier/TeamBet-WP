@@ -11050,16 +11050,17 @@ img.sport_logo {
 .bet .body .header {
   background-color: #414943;
   color: white;
-  padding: 0.5em; }
+  padding: 0.5em;
+  margin-top: 1em; }
 
 .bet .post_info {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
+  -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+      -ms-flex-direction: row;
+          flex-direction: row;
   margin-top: 1.8em; }
 
 .bet .statut {

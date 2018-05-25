@@ -47,11 +47,12 @@
     background-color: #414943;
     color: white;
     padding: 0.5em;
+    margin-top: 1em;
 }
 
 .bet .post_info {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     margin-top: 1.8em;
 }
 
