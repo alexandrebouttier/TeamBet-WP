@@ -30,7 +30,7 @@ $container   = get_theme_mod( 'understrap_container_type' );
 						$author_name ) : get_userdata( intval( $author ) );
 					?>
 
-					<h1><?php esc_html_e( 'About:', 'understrap' ); ?><?php echo esc_html( $curauth->nickname ); ?></h1>
+					<h2><?php esc_html_e( 'Tipster', 'understrap' ); ?> <?php echo esc_html( $curauth->nickname ); ?></h2>
 
 					<?php if ( ! empty( $curauth->ID ) ) : ?>
 						<?php echo get_avatar( $curauth->ID ); ?>
@@ -50,19 +50,19 @@ $container   = get_theme_mod( 'understrap_container_type' );
 						<?php endif; ?>
 					</dl>
 
-					<h2><?php esc_html_e( 'Posts by', 'understrap' ); ?> <?php echo esc_html( $curauth->nickname ); ?>
-						:</h2>
+					<h4><?php esc_html_e( 'Historique de', 'understrap' ); ?> <?php echo esc_html( $curauth->nickname ); ?>
+						:</h4>
 
 				</header><!-- .page-header -->
 
-				<ul>
-
-					<!-- The Loop -->
-					<?php if ( have_posts() ) : ?>
-						<?php while ( have_posts() ) : the_post(); 
-                        $resultat = get_field('statut');?>
-                         
-                        <?php if ($resultat != "En attente") : ?>
+			<?php 
+		
+					$the_query = new WP_Query('category_name=Pronostic');
+					while ($the_query->have_posts()) :
+					$the_query->the_post();
+				  $resultat = get_field('statut');
+				  if ($resultat != "En attente") : ?>
+				 
                          <div class="row">
                      <div class="table-responsive">
                          <table class="table table-striped">
@@ -80,6 +80,7 @@ $container   = get_theme_mod( 'understrap_container_type' );
                                  <td>
                                      <img class="sport_logo" src="<?php showIconSport();?>"> </td>
                                  <td>
+                               
                                      <?php the_field('adversaire_1');?> VS
                                      <?php the_field('adversaire_2');?>
                                  </td>
@@ -103,22 +104,20 @@ $container   = get_theme_mod( 'understrap_container_type' );
                              </tbody>
                          </table>
                      </div>
-<!-- // row -->
-</div>
+            <!-- // row -->
+                </div>
 
 
-                     <?php  endif;?>
-						<?php endwhile; ?>
+   
+						<?php endif; endwhile; ?>
 
-					<?php else : ?>
+				
 
-						<?php get_template_part( 'loop-templates/content', 'none' ); ?>
 
-					<?php endif; ?>
 
 					<!-- End Loop -->
 
-				</ul>
+			
 
 			</main><!-- #main -->
 
