@@ -26,6 +26,10 @@ function theme_enqueue_styles() {
         wp_enqueue_script( 'comment-reply' );
     }
 }
+/**
+ * Custom template tags for this theme.
+ */
+
 
 // Fonction qui affiche l'icone du sport du field ACF 'sport'
 function showIconSport(){
