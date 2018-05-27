@@ -91,7 +91,7 @@ function showTeamHome(){
                     <h5 class="card-title"># <?php the_title(); ?></h5>
                     <h6>Specialité(s)</h6>
                     <p class="card-text"><?php the_field('specialites_'); ?></p>
-                    <a href="profil.html" class="btn btn-yellow my-2 my-sm-0">VOIR PROFIL</a>
+                    <a href="<?php the_field('page_de_profil'); ?>" class="btn btn-yellow my-2 my-sm-0">VOIR PROFIL</a>
                 </div>
             </div>
 
