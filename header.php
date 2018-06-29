@@ -17,18 +17,17 @@ $container = get_theme_mod('understrap_container_type');
     <meta lang="fr"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-46924947-5"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
 
-        function gtag() {
-            dataLayer.push(arguments);
-        }
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-46924947-6"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
-        gtag('js', new Date());
-        gtag('config', 'UA-46924947-5');
-    </script>
+  gtag('config', 'UA-46924947-6');
+</script>
+
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-title" content="<?php bloginfo('name'); ?> - <?php bloginfo('description'); ?>">
@@ -42,13 +41,16 @@ $container = get_theme_mod('understrap_container_type');
     <meta property="og:locale" content="fr_FR"/>
     <meta property="og:url" content="https://www.teambet.fr"/>
     <meta property="og:type" content="website"/>
-    <meta property="og:image" content="https://www.teambet.fr/og-image.png"/>
+	<meta name="twitter:image:src" content="https://www.teambet.fr/wp-content/uploads/2018/06/twitter.jpg">
+
+	<meta name="twitter:image" content="https://www.teambet.fr/wp-content/uploads/2018/06/twitter.jpg" />
+    <meta property="og:image" content="https://www.teambet.fr/wp-content/uploads/2018/og-image.png"/>
     <meta property="og:image:type" content="image/png"/>
     <meta property="og:image:alt" content="Logo du site web Team-Bet"/>
     <meta property="og:image:width" content="600"/>
     <meta property="og:image:height" content="315"/>
     <meta property="og:description" content="Plateforme de tipsters de paris sportifs"/>
-    <meta property="fb:app_id" content="1902889856687684"/>
+    <meta property="fb:app_id" content="467151287075682"/>
     <?php wp_head(); ?>
 </head>
 
@@ -108,7 +110,7 @@ $container = get_theme_mod('understrap_container_type');
                     )
                 ); ?>
                 <?php if ('container' == $container) : ?>
-                <a href="inscription" class="btn btn-success my-2 my-sm-0">INSCRIPTION</a>
+               <!--  <a href="inscription" class="btn btn-success my-2 my-sm-0">INSCRIPTION</a> -->
             </div><!-- .container -->
         <?php endif; ?>
 

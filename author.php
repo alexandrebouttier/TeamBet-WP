@@ -30,7 +30,7 @@ $container   = get_theme_mod( 'understrap_container_type' );
 						$author_name ) : get_userdata( intval( $author ) );
 					?>
 
-					<h2><?php esc_html_e( 'Tipster', 'understrap' ); ?> <?php echo esc_html( $curauth->nickname ); ?></h2>
+					<h2><?php esc_html_e( 'Profil de', 'understrap' ); ?> <?php echo esc_html( $curauth->nickname ); ?></h2>
 
 					<?php if ( ! empty( $curauth->ID ) ) : ?>
 						<?php echo get_avatar( $curauth->ID ); ?>
@@ -48,6 +48,18 @@ $container   = get_theme_mod( 'understrap_container_type' );
 							<dt><?php esc_html_e( 'Profile', 'understrap' ); ?></dt>
 							<dd><?php echo esc_html( $curauth->user_description ); ?></dd>
 						<?php endif; ?>
+						
+						<?php if ( ! empty( $curauth->betbankroll ) ) : ?>
+						<div style="margin-top:1em;">
+							<h5>
+								Voir mes stats:
+							</h5>
+							<a href="<?php echo $curauth->betbankroll; ?>">
+								<img src="https://www.bet-bankroll.com/images/bet-bankroll-v4.png" height="200" width="200">
+							</a>
+						</div>
+						<?php endif; ?>
+						
 					</dl>
 
 					<h4><?php esc_html_e( 'Historique de', 'understrap' ); ?> <?php echo esc_html( $curauth->nickname ); ?>
@@ -55,67 +67,138 @@ $container   = get_theme_mod( 'understrap_container_type' );
 
 				</header><!-- .page-header -->
 
-			<?php 
+		<div class="flex_row">
+			
+				
 		
-					$the_query = new WP_Query('category_name=Pronostic');
-					while ($the_query->have_posts()) :
-					$the_query->the_post();
-				  $resultat = get_field('statut');
-				  if ($resultat != "En attente") : ?>
+						<?php if ( have_posts() ) : ?>
+						<?php while ( have_posts() ) : the_post(); ?>
 				 
-                         <div class="row">
-                     <div class="table-responsive">
-                         <table class="table table-striped">
-                             <thead>
-                                 <tr>
-                                     <th scope="col"></th>
-                                     <th scope="col">ÉVÉNEMENT</th>
-                                     <th scope="col">DATE</th>
-                                     <th scope="col">SÉLECTION</th>
-                                     <th scope="col">CÖTE</th>
-                                     <th scope="col">RÉSULTAT</th>
-                                 </tr>
-                             </thead>
-                             <tbody>
-                                 <td>
-                                     <img class="sport_logo" src="<?php showIconSport();?>"> </td>
-                                 <td>
-                               
-                                     <?php the_field('adversaire_1');?> VS
-                                     <?php the_field('adversaire_2');?>
-                                 </td>
+				  <?php if (getResultBet()!= "En attente") : ?>
+				    <?php
 
-                                 <td>
-                                     <?php the_field('date_du_match');?>
-                                 </td>
-                                 <td>
-                                     <?php the_field('choix_de_pari');?>
-                                     <br>
-                                     <?php the_field('pronostic');?>
+    foreach (get_the_category() as $category) {
+        if ('Pronostic combiné' OR 'Pronostic' == $category->cat_name) {
+            ?>
+                    <div class="betpost">
+                        <header>
+                          <?php   
+			
+        if ('Pronostic combiné'== $category->cat_name) :
+		
+			?>
+			Pari Combiné
+            <?php endif;
+			  if ('Pronostic'== $category->cat_name) :
+		
+			?>
+			Pari Simple
+            <?php endif;
+							?>
+                            <br>
+                            <span class="post_date"><?php understrap_posted_on(); ?> </span>
+                        </header>
+                        <div class="body">
+                            <div class="flex_row">
+                                <div class="bloc_mise">
+                                    <div class="flex_col">
+                                        MISE
+                                        <span><?php the_field('mise'); ?>€</span>
+                                    </div>
+                                </div>
+                                <div class="bloc_cote ">
+                                    <div class="flex_col">
+                                        COTE
+											 <?php
+        if ('Pronostic'  == $category->cat_name) :
+            ?>
+                  <span><?php the_field('côte'); ?></span>
+          <?php endif;
+			
+        if ('Pronostic combiné'== $category->cat_name) :
+		
+			?>
+			  <span><?php the_field('côte_total'); ?></span>
+            <?php endif;
+			?>
+                                      
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="gain flex_col">
+								<?php 
+									if(getResultBet() == "En attente"){
+										echo " <span>GAINS POTENTIELS</span>";
+									}
+									if(getResultBet() == "Gagné"){
+										echo " <span>GAINS</span>";
+									}
+									if(getResultBet() == "Perdu"){
+										echo " <span>PERTE</span>";
+									}
+									if(getResultBet() == "Renbourser"){
+										echo " <span>RENBOURSER</span>";
+									}
+								?>
+                               					
+			 <?php
+        if ('Pronostic'  == $category->cat_name) :
+            ?>
+                 <span class="<?php getClassGainBet();?> gain_value"> <?php $gain = getGainBet(); echo $gain;?>€</span>
+          <?php endif;
+			
+        if ('Pronostic combiné'== $category->cat_name) :
+		
+			?>
+			 <span class="<?php getClassGainBet();?> gain_value"> <?php $gain = getGainBetCombi(); echo $gain;?>€</span>
+            <?php endif;
+			?>
+								
+								
+                            </div>
+                        </div>
+                        <footer class="flex_col">
+                            <span style="font-family: OpenSans-Bold;"><?php the_title(); ?></span>
+							
+			 <?php
+        if ('Pronostic'  == $category->cat_name) :
+            ?>
+                 <span><?php the_field('date_du_match'); ?> <?php the_field('heure_du_match'); ?></span>
+          <?php endif;
+			
+        if ('Pronostic combiné'== $category->cat_name) :
+		
+			?>
+			 <span><?php the_field('date_match_1'); ?> <?php the_field('heure_match_1'); ?></span>
+            <?php endif;
+			?>
+		
+						
+                           
+                            
+<a  href="<?php the_permalink();?>"class="btn btn-info">Voir le pronostic</a>
+                        </footer>
 
-                                 </td>
-                                 <td>
-                                     <?php the_field('côte');?>
-                                 </td>
-                                 <td>
-                            <img class="img-result"src="<?php showIconStatut();?>" alt="">
-                         
-                     </td>
-                             </tbody>
-                         </table>
-                     </div>
-            <!-- // row -->
-                </div>
+                    </div>
+            <?php
+        }
 
-
+    }
+    ?>
    
 						<?php endif; endwhile; ?>
 
+						<?php else : ?>
+						<p>Aucun historique de disponible pour le moment !</p>
+							
 				
 
+					<?php endif; ?>
+
+</div>
 
 
-					<!-- End Loop -->
+					
 
 			
 

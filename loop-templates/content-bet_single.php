@@ -7,71 +7,79 @@
 
 ?>
 <article <?php post_class(); ?> id="post-<?php the_ID(); ?>">
+ <div class="bet">
 
-    <div class="bet">
-        <div class="header">
-            <a href="http://www.teambet.fr/pronostics" class="btn btn-success">RETOUR</a>
-        </div>
+                    <header>
+                        <a href="pronostics" class="btn btn-yellow">RETOUR</a>
 
-        <div class="body">
-            <?php understrap_posted_on(); ?>
-            <div class="header">
-                <span>Type de pari: <?php the_field('choix_de_pari'); ?></span>
-            </div>
+                        <br>
+                        <span> <?php understrap_posted_on(); ?></span>
+                    </header>
+                    <div class="body">
+                        <div class="table-responsive-md">
 
-            <div class="tab">
-                <div class="statut">
-                        <span>Statut:</span>
-                        <img class="img-result" src="<?php showIconStatut(); ?>" alt="">
-                        </span>
-                </div>
+                            <table class="table table-striped">
+                                <thead>
+                                    <tr>
+										    <?php   
+			foreach (get_the_category() as $category) {
+        if ('Pronostic combiné'== $category->cat_name) :
+		
+			?>
+			Pari Combiné
+            <?php endif;
+			  if ('Pronostic'== $category->cat_name) :
+		
+			?>
+			Pari Simple
+            <?php endif; }
+							?>
+                                        <th scope="col">Match</th>
+                                        <th scope="col">Sélection</th>
+                                        <th scope="col">Cote</th>
+                                      
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                      
+                                        <td>
+                                           <b>  <?php the_title(); ?></b>
+                                            <br> <?php the_field('date_du_match'); ?> à <?php the_field('heure_du_match'); ?>
+                                        </td>
+                                        <td><?php the_field('choix_de_pari'); ?>
+                                            <br>
+                                            <b><?php the_field('pronostic'); ?></b>
+
+                                        </td>
+
+                                        <td><?php the_field('côte'); ?></td>
+                                       
+                                    </tr>
 
 
-                <div class="match">
-                
 
-                    <span><?php the_field('competition'); ?></span>
-                    <span><b><?php the_field('adversaire_1'); ?> VS <?php the_field('adversaire_2'); ?></b></span>
 
-                    <span class="date_match"><?php the_field('date_du_match'); ?>
-                        à <?php the_field('heure_du_match'); ?></span>
+                                </tbody>
+                            </table>
+							<?php 
+								function gains() {
+								$mise = get_field('mise');
+								$cote = get_field('côte');
+								$resultat = $mise * $cote - $mise;
+								echo $resultat;
+	
+							}
+							?>
+							<span>Mise totale :  <?php the_field('mise'); ?>€ </span> <br>
+							<span> Gains potentiels : <?php gains();?> €</span>
+                        </div>
+						
 
-                    <div class="select">
-                        <span>Pronostic:</span>
-                        <span>
-                            <b><?php the_field('pronostic'); ?></b>
-                            </span>
                     </div>
-                </div>
 
-                <div class="confiance">
-                    <span>Confiance</span>
-                    <span>
-                         <b><?php the_field('confiance'); ?>%</b>
-                    </span>
+	
                 </div>
-                <div class="cote">
-                    <span>Côte</span>
-                    <span>
-                                        <b><?php the_field('côte'); ?></b>
-                                    </span>
-                </div>
-            </div>
-            <!-- // tab-->
-            <?php
-            $analyse = get_field('analyse');
-            if (!empty($analyse)) {
-                ?>
-                <div class="analyse">
-								<span>
-									<b>Mon analyse:</b>
-								</span>
-                    <p><?php the_field('analyse'); ?></p>
-                </div>
-                <?php
-            }
-            ?>
-
-        </div>
-
+	
+  
 </article><!-- #post-## -->

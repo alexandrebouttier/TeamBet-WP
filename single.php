@@ -28,7 +28,11 @@ $container = get_theme_mod('understrap_container_type');
                         // Si la catégorie de l'article est = à 'Pronostic' ont affiche la page dédié
                         if ('Pronostic' == $category->cat_name) {
                             get_template_part('loop-templates/content', 'bet_single');
-                        } //  sinon ont affiche la page de base
+                        }
+						if ('Pronostic combiné' == $category->cat_name) {
+                            get_template_part('loop-templates/content', 'bet_combiné');
+                        }
+						//  sinon ont affiche la page de base
                         else {
                             get_template_part('loop-templates/content', 'single');
                         }
@@ -46,6 +50,7 @@ $container = get_theme_mod('understrap_container_type');
 
                 <?php endwhile; // end of the loop. ?>
 
+<!-- // Fin ads subscription -->
             </main><!-- #main -->
 
         </div><!-- #primary -->

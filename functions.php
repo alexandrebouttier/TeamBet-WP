@@ -26,110 +26,150 @@ function theme_enqueue_styles() {
         wp_enqueue_script( 'comment-reply' );
     }
 }
+
+
+
 /**
- * Custom template tags for this theme.
+ * FONCTIONS DU THEME TEAMBET
  */
 
-
-// Fonction qui affiche l'icone du sport du field ACF 'sport'
-function showIconSport(){
-    $url=get_site_url();
+// Fonction qui récupere le résultat du pronostic "Gagné,Perdu,Renbourser"
+function getResultBet(){
+	$result = get_field('statut'); 
+    return $result;
+}
+// Fonction qui retourne true si le pronostic est terminer
+function getFinishBet(){
+	  if (getResultBet() != "En attente"){
+		  $result = true;
+	  }
+	
+	return $result;
+	
+}
+function getIconResultBet(){
+   $url=get_site_url();
    $pathFolderImg ="$url/wp-content/themes/teambet/img";
+   $wait="$pathFolderImg/time.png";
+   $win ="$pathFolderImg/win.png";
+   $lose ="$pathFolderImg/lose.png";
+   $cancel ="$pathFolderImg/cancel.png";
+   $statut ="";
+    if (getResultBet() == "Gagné") {
+       $statut = $win;
+    } 
+    elseif (getResultBet() == "Perdu") {
+        $statut = $lose;
+    }
+	else {
+        $statut = $cancel;
+    }
+    echo $statut;
+}
+// Fonction qui récupere le sport du pronostic "Football,Tennis,Basket,Rugby"
+function getSportBet(){
+	$sport = get_field('sport');
+	return $sport;
+}		
+// Fonction qui affiche l'icone du sport du pronostic
+function getIconSportBet(){
+    $url=get_site_url();
+    $pathFolderImg ="$url/wp-content/themes/teambet/img";
     $getsport = get_field('sport');
     $football = "$pathFolderImg/football.png";
     $tennis = "$pathFolderImg/tennis.png";
     $basket = "$pathFolderImg/basketball.png";
     $rugby = "$pathFolderImg/rugby.png";
     $sport = "";
-     if($getsport == "Football") {
+     if(getSportBet() == "Football") {
          $sport=$football;
      }
-     if($getsport == "Tennis"){
+     if(getSportBet() == "Tennis"){
         $sport=$tennis;
     }
-    if($getsport == "Basket-ball"){
+    if(getSportBet() == "Basket-ball"){
         $sport=$basket;
     }
-    if($getsport == "Rugby"){
+    if(getSportBet() == "Rugby"){
         $sport=$rugby;
     }
     echo $sport;
 }
-// Fonction qui affiche l'icone du staut du pronostic du field ACF 'statut'
-function showIconStatut(){
-   $url=get_site_url();
-   $pathFolderImg ="$url/wp-content/themes/teambet/img";
-   $resultat = get_field('statut'); 
-   $wait="$pathFolderImg/time.png";
-   $win ="$pathFolderImg/win.png";
-   $lose ="$pathFolderImg/lose.png";
-   $cancel ="$pathFolderImg/cancel.png";
-   $statut ="";
-   
-    if ($resultat == "Gagné") {
-       $statut = $win;
-    } 
-    elseif ($resultat == "Perdu") {
-        $statut = $lose;
-    }elseif ($resultat == "Rembourser") {
-        $statut = $cancel;
+// Fonction qui affiche le gain ou la perte du pronostic
+function getGainBet(){
+	$mise = get_field('mise'); 
+	$cote = get_field('côte');
+		if( getResultBet() == "Gagné"){
+			$gain = $mise*$cote-$mise;
+		}
+		elseif(getResultBet() == "Perdu"){
+			$gain = - $mise;
+		}
+		else{
+			$gain = $mise;
+		}
+	return $gain;
+}
+
+function getGainBetCombi(){
+	$mise = get_field('mise'); 
+	$cote = get_field('côte_total');
+		if( getResultBet() == "Gagné"){
+			$gain = $mise*$cote-$mise;
+		}
+		elseif(getResultBet() == "Perdu"){
+			$gain = - $mise;
+		}
+		else{
+			$gain = $mise;
+		}
+	return $gain;
+}
+// Fonction qui retourne une class CSS en fonction du résultat du pronostic
+function getClassGainBet(){
+    if(getResultBet()=="Gagné") {
+        $class="green";
     }
-    elseif ($resultat == "En attente") {
-        $statut = $wait;
+    if(getResultBet()=="Perdu") {
+        $class="red";
     }
-    echo $statut;
-}
-function showTeamHome(){
-    $the_query = new WP_Query('category_name=Team&orderby=ASC');
-    while ($the_query->have_posts()) :
-        $the_query->the_post();
-        ?>
-        <div class="col-md-4">
-            <div class="wow slideInRight animated card text-center" style="width: 18rem;">
-                <img class="card-img center" src="<?php the_field('image_de_profil'); ?>"/>
-                <div class="card-body">
-                    <h5 class="card-title"># <?php the_title(); ?></h5>
-                    <h6>Specialité(s)</h6>
-                    <p class="card-text"><?php the_field('specialites_'); ?></p>
-                    <a href="<?php the_field('page_de_profil'); ?>" class="btn btn-yellow my-2 my-sm-0">VOIR PROFIL</a>
-                </div>
-            </div>
-
-            <!-- // Fin column -->
-        </div>
-    <?php endwhile;
-}
-// Affiche les derniers prnostics sur la page d'accueil d'ou le statut est diférent de attente
-function showLastBetsHome(){
-   
-    $the_query = new WP_Query('category_name=Pronostic&showposts=11&orderby=ASC');
-    while ($the_query->have_posts()) :
-    $the_query->the_post();
-    $resultat = get_field('statut');
-    if ($resultat != "En attente") : ?>
-    <tr>
-        <td>
-            <?php the_author(); ?>
-        </td>
-        <td><img class="sport_logo" src="<?php showIconSport(); ?>"></td>
-        <td>
-            <?php the_field('adversaire_1'); ?> VS <?php the_field('adversaire_2'); ?>
-        </td>
-
-        <td><?php the_field('date_du_match'); ?></td>
-        <td>
-            <?php the_field('choix_de_pari'); ?> <br>
-            <?php the_field('pronostic'); ?>
-
-        </td>
-        <td><?php the_field('côte'); ?></td>
-        <td>
-        <img class="img-result" src="<?php showIconStatut(); ?>"  alt="">
-        </td>
-
-
-        <?php endif; endwhile; 
+    if(getResultBet()=="En attente") {
+        $class="yellow";
+    }
+    if(getResultBet()=="Rembourser") {
+        $class="blue";
+    }
+	echo $class;
 }
 
+function isCombi(){
+	
+	if ('Pronostic combiné' == $category->cat_name){
+		$resultat = true;
+	}
+	else{
+		$resultat = false;
+	}
+	return $resultat;
+}
+function isSimple(){
+	
+	if ('Pronostic' == $category->cat_name){
+		$resultat = true;
+	}
+	else{
+		$resultat = false;
+	}
+	return $resultat;
+}
+// Ajouter des champs personnalisés dans le profil utilisateur de WordPress
+add_filter('user_contactmethods','wpm_user_fields',10,1);
 
+function wpm_user_fields( $contactmethods ) {
+	// On ajoute Betbankroll
+	$contactmethods['betbankroll'] = 'Bet Bankroll';
+	return $contactmethods;
+}
+
+ 
 

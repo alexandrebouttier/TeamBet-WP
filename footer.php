@@ -43,7 +43,16 @@ $container = get_theme_mod('understrap_container_type');
 </div><!-- #page we need this extra closing tag here -->
 
 <?php wp_footer(); ?>
+<script >
+	
+	var url = document.location.href;
+	if(url.includes("pronostics")  ){
+		 document.getElementById("main").className += " flex_row";
+	}
 
+
+
+</script>
 </body>
 
 </html>
