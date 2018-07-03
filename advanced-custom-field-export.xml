@@ -16,7 +16,7 @@
 <!-- 7. WordPress will then import each of the posts, pages, comments, categories, etc. -->
 <!--    contained in this file into your site. -->
 
-<!-- generator="WordPress/4.9.6" created="2018-06-29 13:13" -->
+<!-- generator="WordPress/4.9.6" created="2018-07-03 14:27" -->
 <rss version="2.0"
 	xmlns:excerpt="http://wordpress.org/export/1.1/excerpt/"
 	xmlns:content="http://purl.org/rss/1.0/modules/content/"
@@ -29,15 +29,17 @@
 	<title>Team-Bet</title>
 	<link>https://www.teambet.fr</link>
 	<description>Plateforme de tipsters de paris sportifs</description>
-	<pubDate>Fri, 29 Jun 2018 13:13:17 +0000</pubDate>
+	<pubDate>Tue, 03 Jul 2018 14:27:44 +0000</pubDate>
 	<language></language>
 	<wp:wxr_version>1.1</wp:wxr_version>
 	<wp:base_site_url>https://www.teambet.fr</wp:base_site_url>
 	<wp:base_blog_url>https://www.teambet.fr</wp:base_blog_url>
 	<wp:author><wp:author_id>1</wp:author_id><wp:author_login>Alexandre</wp:author_login><wp:author_email>wordpress@teambet.fr</wp:author_email><wp:author_display_name><![CDATA[Alexandre]]></wp:author_display_name><wp:author_first_name><![CDATA[]]></wp:author_first_name><wp:author_last_name><![CDATA[]]></wp:author_last_name></wp:author>
-	<wp:author><wp:author_id>3</wp:author_id><wp:author_login>Joffreybrn</wp:author_login><wp:author_email>bruno.joffrey@orange.fr</wp:author_email><wp:author_display_name><![CDATA[Joffreybrn]]></wp:author_display_name><wp:author_first_name><![CDATA[]]></wp:author_first_name><wp:author_last_name><![CDATA[]]></wp:author_last_name></wp:author>
 	<wp:author><wp:author_id>4</wp:author_id><wp:author_login>teambet</wp:author_login><wp:author_email>alexandrebouttier@gmail.com</wp:author_email><wp:author_display_name><![CDATA[alexandre bouttier]]></wp:author_display_name><wp:author_first_name><![CDATA[alexandre]]></wp:author_first_name><wp:author_last_name><![CDATA[bouttier]]></wp:author_last_name></wp:author>
 	<wp:author><wp:author_id>6</wp:author_id><wp:author_login>SHVRK</wp:author_login><wp:author_email>charlygigb@gmail.com</wp:author_email><wp:author_display_name><![CDATA[SHVRK]]></wp:author_display_name><wp:author_first_name><![CDATA[]]></wp:author_first_name><wp:author_last_name><![CDATA[]]></wp:author_last_name></wp:author>
+	<wp:author><wp:author_id>7</wp:author_id><wp:author_login>pronoskop</wp:author_login><wp:author_email>pronoskop@gmail.com</wp:author_email><wp:author_display_name><![CDATA[pronoskop]]></wp:author_display_name><wp:author_first_name><![CDATA[]]></wp:author_first_name><wp:author_last_name><![CDATA[]]></wp:author_last_name></wp:author>
+	<wp:author><wp:author_id>8</wp:author_id><wp:author_login>KA Pronos</wp:author_login><wp:author_email>kyliam-amour@orange.fr</wp:author_email><wp:author_display_name><![CDATA[KA Pronos]]></wp:author_display_name><wp:author_first_name><![CDATA[]]></wp:author_first_name><wp:author_last_name><![CDATA[]]></wp:author_last_name></wp:author>
+	<wp:author><wp:author_id>9</wp:author_id><wp:author_login>StockoProno</wp:author_login><wp:author_email>robert.julian431@gmail.com</wp:author_email><wp:author_display_name><![CDATA[StockoProno]]></wp:author_display_name><wp:author_first_name><![CDATA[]]></wp:author_first_name><wp:author_last_name><![CDATA[]]></wp:author_last_name></wp:author>
 	<item>
 		<title>Jumbotron</title>
 		<link>https://www.teambet.fr/?acf=acf_jumbotron</link>
@@ -196,16 +198,12 @@
 			<wp:meta_value><![CDATA[a:14:{i:0;s:9:"permalink";i:1;s:11:"the_content";i:2;s:7:"excerpt";i:3;s:13:"custom_fields";i:4;s:10:"discussion";i:5;s:8:"comments";i:6;s:9:"revisions";i:7;s:4:"slug";i:8;s:6:"author";i:9;s:6:"format";i:10;s:14:"featured_image";i:11;s:10:"categories";i:12;s:4:"tags";i:13;s:15:"send-trackbacks";}]]></wp:meta_value>
 		</wp:postmeta>
 		<wp:postmeta>
-			<wp:meta_key>field_5b05857250975</wp:meta_key>
-			<wp:meta_value><![CDATA[a:14:{s:3:"key";s:19:"field_5b05857250975";s:5:"label";s:11:"Competition";s:4:"name";s:11:"competition";s:4:"type";s:4:"text";s:12:"instructions";s:90:"Entrer le nom de la compétition que votre bookmaker indique exemple : Ligue des champions";s:8:"required";s:1:"1";s:13:"default_value";s:0:"";s:11:"placeholder";s:0:"";s:7:"prepend";s:0:"";s:6:"append";s:0:"";s:10:"formatting";s:4:"html";s:9:"maxlength";s:0:"";s:17:"conditional_logic";a:3:{s:6:"status";s:1:"0";s:5:"rules";a:1:{i:0;a:3:{s:5:"field";s:19:"field_5b05870c7cd0b";s:8:"operator";s:2:"==";s:5:"value";s:10:"En attente";}}s:8:"allorany";s:3:"all";}s:8:"order_no";i:2;}]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
 			<wp:meta_key>field_5b0585973d4bd</wp:meta_key>
-			<wp:meta_value><![CDATA[a:11:{s:3:"key";s:19:"field_5b0585973d4bd";s:5:"label";s:13:"Date du match";s:4:"name";s:13:"date_du_match";s:4:"type";s:11:"date_picker";s:12:"instructions";s:23:"Entrer la date du match";s:8:"required";s:1:"1";s:11:"date_format";s:8:"dd/mm/yy";s:14:"display_format";s:8:"dd/mm/yy";s:9:"first_day";s:1:"1";s:17:"conditional_logic";a:3:{s:6:"status";s:1:"0";s:5:"rules";a:1:{i:0;a:3:{s:5:"field";s:19:"field_5b05870c7cd0b";s:8:"operator";s:2:"==";s:5:"value";s:10:"En attente";}}s:8:"allorany";s:3:"all";}s:8:"order_no";i:3;}]]></wp:meta_value>
+			<wp:meta_value><![CDATA[a:11:{s:3:"key";s:19:"field_5b0585973d4bd";s:5:"label";s:13:"Date du match";s:4:"name";s:13:"date_du_match";s:4:"type";s:11:"date_picker";s:12:"instructions";s:23:"Entrer la date du match";s:8:"required";s:1:"1";s:11:"date_format";s:8:"dd/mm/yy";s:14:"display_format";s:8:"dd/mm/yy";s:9:"first_day";s:1:"1";s:17:"conditional_logic";a:3:{s:6:"status";s:1:"0";s:5:"rules";a:1:{i:0;a:3:{s:5:"field";s:19:"field_5b05870c7cd0b";s:8:"operator";s:2:"==";s:5:"value";s:10:"En attente";}}s:8:"allorany";s:3:"all";}s:8:"order_no";i:2;}]]></wp:meta_value>
 		</wp:postmeta>
 		<wp:postmeta>
 			<wp:meta_key>field_5b0585c573dcf</wp:meta_key>
-			<wp:meta_value><![CDATA[a:14:{s:3:"key";s:19:"field_5b0585c573dcf";s:5:"label";s:14:"Heure du match";s:4:"name";s:14:"heure_du_match";s:4:"type";s:4:"text";s:12:"instructions";s:67:"Entrer l'heure exact du match , respecter ce format exemple: 20H45 ";s:8:"required";s:1:"1";s:13:"default_value";s:0:"";s:11:"placeholder";s:0:"";s:7:"prepend";s:0:"";s:6:"append";s:0:"";s:10:"formatting";s:4:"html";s:9:"maxlength";s:0:"";s:17:"conditional_logic";a:3:{s:6:"status";s:1:"0";s:5:"rules";a:1:{i:0;a:3:{s:5:"field";s:19:"field_5b05870c7cd0b";s:8:"operator";s:2:"==";s:5:"value";s:10:"En attente";}}s:8:"allorany";s:3:"all";}s:8:"order_no";i:4;}]]></wp:meta_value>
+			<wp:meta_value><![CDATA[a:14:{s:3:"key";s:19:"field_5b0585c573dcf";s:5:"label";s:14:"Heure du match";s:4:"name";s:14:"heure_du_match";s:4:"type";s:4:"text";s:12:"instructions";s:67:"Entrer l'heure exact du match , respecter ce format exemple: 20H45 ";s:8:"required";s:1:"1";s:13:"default_value";s:0:"";s:11:"placeholder";s:0:"";s:7:"prepend";s:0:"";s:6:"append";s:0:"";s:10:"formatting";s:4:"html";s:9:"maxlength";s:0:"";s:17:"conditional_logic";a:3:{s:6:"status";s:1:"0";s:5:"rules";a:1:{i:0;a:3:{s:5:"field";s:19:"field_5b05870c7cd0b";s:8:"operator";s:2:"==";s:5:"value";s:10:"En attente";}}s:8:"allorany";s:3:"all";}s:8:"order_no";i:3;}]]></wp:meta_value>
 		</wp:postmeta>
 		<wp:postmeta>
 			<wp:meta_key>field_5b05866e3ebe0</wp:meta_key>
@@ -213,11 +211,11 @@
 		</wp:postmeta>
 		<wp:postmeta>
 			<wp:meta_key>field_5b0586b2babee</wp:meta_key>
-			<wp:meta_value><![CDATA[a:14:{s:3:"key";s:19:"field_5b0586b2babee";s:5:"label";s:13:"Choix de pari";s:4:"name";s:13:"choix_de_pari";s:4:"type";s:4:"text";s:12:"instructions";s:131:"Indiquer le choix de votre pari , par exemple : Résultat du match , Buteur ,Nombre de buts , utiliser le texte de votre bookmaker ";s:8:"required";s:1:"1";s:13:"default_value";s:0:"";s:11:"placeholder";s:0:"";s:7:"prepend";s:0:"";s:6:"append";s:0:"";s:10:"formatting";s:4:"html";s:9:"maxlength";s:0:"";s:17:"conditional_logic";a:3:{s:6:"status";s:1:"0";s:5:"rules";a:1:{i:0;a:3:{s:5:"field";s:19:"field_5b05870c7cd0b";s:8:"operator";s:2:"==";s:5:"value";s:10:"En attente";}}s:8:"allorany";s:3:"all";}s:8:"order_no";i:9;}]]></wp:meta_value>
+			<wp:meta_value><![CDATA[a:14:{s:3:"key";s:19:"field_5b0586b2babee";s:5:"label";s:13:"Choix de pari";s:4:"name";s:13:"choix_de_pari";s:4:"type";s:4:"text";s:12:"instructions";s:164:"Indiquer le choix de votre pari , par exemple : Résultat du match , Buteur ,Nombre de buts , utiliser le texte de votre bookmaker et respecter bien les majuscules ";s:8:"required";s:1:"1";s:13:"default_value";s:0:"";s:11:"placeholder";s:0:"";s:7:"prepend";s:0:"";s:6:"append";s:0:"";s:10:"formatting";s:4:"html";s:9:"maxlength";s:0:"";s:17:"conditional_logic";a:3:{s:6:"status";s:1:"0";s:5:"rules";a:1:{i:0;a:3:{s:5:"field";s:19:"field_5b05870c7cd0b";s:8:"operator";s:2:"==";s:5:"value";s:10:"En attente";}}s:8:"allorany";s:3:"all";}s:8:"order_no";i:8;}]]></wp:meta_value>
 		</wp:postmeta>
 		<wp:postmeta>
 			<wp:meta_key>field_5b0586cce7cc3</wp:meta_key>
-			<wp:meta_value><![CDATA[a:14:{s:3:"key";s:19:"field_5b0586cce7cc3";s:5:"label";s:9:"Pronostic";s:4:"name";s:9:"pronostic";s:4:"type";s:4:"text";s:12:"instructions";s:143:"Indiquer ici votre pronostic par exemple si vous avez mis plus haut dans choix de pari Résultat du match entrer seulement le nom du vainqueur ";s:8:"required";s:1:"1";s:13:"default_value";s:0:"";s:11:"placeholder";s:0:"";s:7:"prepend";s:0:"";s:6:"append";s:0:"";s:10:"formatting";s:4:"html";s:9:"maxlength";s:0:"";s:17:"conditional_logic";a:3:{s:6:"status";s:1:"0";s:5:"rules";a:1:{i:0;a:3:{s:5:"field";s:19:"field_5b05870c7cd0b";s:8:"operator";s:2:"==";s:5:"value";s:10:"En attente";}}s:8:"allorany";s:3:"all";}s:8:"order_no";i:10;}]]></wp:meta_value>
+			<wp:meta_value><![CDATA[a:14:{s:3:"key";s:19:"field_5b0586cce7cc3";s:5:"label";s:9:"Pronostic";s:4:"name";s:9:"pronostic";s:4:"type";s:4:"text";s:12:"instructions";s:143:"Indiquer ici votre pronostic par exemple si vous avez mis plus haut dans choix de pari Résultat du match entrer seulement le nom du vainqueur ";s:8:"required";s:1:"1";s:13:"default_value";s:0:"";s:11:"placeholder";s:0:"";s:7:"prepend";s:0:"";s:6:"append";s:0:"";s:10:"formatting";s:4:"html";s:9:"maxlength";s:0:"";s:17:"conditional_logic";a:3:{s:6:"status";s:1:"0";s:5:"rules";a:1:{i:0;a:3:{s:5:"field";s:19:"field_5b05870c7cd0b";s:8:"operator";s:2:"==";s:5:"value";s:10:"En attente";}}s:8:"allorany";s:3:"all";}s:8:"order_no";i:9;}]]></wp:meta_value>
 		</wp:postmeta>
 		<wp:postmeta>
 			<wp:meta_key>field_5b0586efc181f</wp:meta_key>
@@ -225,11 +223,11 @@
 		</wp:postmeta>
 		<wp:postmeta>
 			<wp:meta_key>field_5b05870c7cd0b</wp:meta_key>
-			<wp:meta_value><![CDATA[a:12:{s:3:"key";s:19:"field_5b05870c7cd0b";s:5:"label";s:6:"Statut";s:4:"name";s:6:"statut";s:4:"type";s:6:"select";s:12:"instructions";s:144:"Le statut est le résultat du pronostic  ( par défaut il est en attente une fois le match terminer modifier votre article et changer ce statut)";s:8:"required";s:1:"1";s:7:"choices";a:4:{s:10:"En attente";s:10:"En attente";s:6:"Gagné";s:6:"Gagné";s:5:"Perdu";s:5:"Perdu";s:10:"Rembourser";s:10:"Rembourser";}s:13:"default_value";s:10:"En attente";s:10:"allow_null";s:1:"0";s:8:"multiple";s:1:"0";s:17:"conditional_logic";a:3:{s:6:"status";s:1:"0";s:5:"rules";a:1:{i:0;a:3:{s:5:"field";s:19:"field_5b05866e3ebe0";s:8:"operator";s:2:"==";s:5:"value";s:8:"Football";}}s:8:"allorany";s:3:"all";}s:8:"order_no";i:0;}]]></wp:meta_value>
+			<wp:meta_value><![CDATA[a:12:{s:3:"key";s:19:"field_5b05870c7cd0b";s:5:"label";s:6:"Statut";s:4:"name";s:6:"statut";s:4:"type";s:6:"select";s:12:"instructions";s:152:"!! Le statut est le résultat du pronostic  ( par défaut il est en attente une fois le match terminer ,modifier votre article et changer ce statut ) !!";s:8:"required";s:1:"1";s:7:"choices";a:4:{s:10:"En attente";s:10:"En attente";s:6:"Gagné";s:6:"Gagné";s:5:"Perdu";s:5:"Perdu";s:10:"Rembourser";s:10:"Rembourser";}s:13:"default_value";s:10:"En attente";s:10:"allow_null";s:1:"0";s:8:"multiple";s:1:"0";s:17:"conditional_logic";a:3:{s:6:"status";s:1:"0";s:5:"rules";a:1:{i:0;a:3:{s:5:"field";s:19:"field_5b05866e3ebe0";s:8:"operator";s:2:"==";s:5:"value";s:8:"Football";}}s:8:"allorany";s:3:"all";}s:8:"order_no";i:0;}]]></wp:meta_value>
 		</wp:postmeta>
 		<wp:postmeta>
 			<wp:meta_key>field_5b05aeeecd621</wp:meta_key>
-			<wp:meta_value><![CDATA[a:15:{s:3:"key";s:19:"field_5b05aeeecd621";s:5:"label";s:5:"Côte";s:4:"name";s:5:"côte";s:4:"type";s:6:"number";s:12:"instructions";s:83:"Indiquer la côte de votre sélection par rapport à votre bookmaker  exemple: 1.85";s:8:"required";s:1:"1";s:13:"default_value";s:0:"";s:11:"placeholder";s:0:"";s:7:"prepend";s:0:"";s:6:"append";s:0:"";s:3:"min";s:0:"";s:3:"max";s:0:"";s:4:"step";s:0:"";s:17:"conditional_logic";a:3:{s:6:"status";s:1:"0";s:5:"rules";a:1:{i:0;a:3:{s:5:"field";s:19:"field_5b05870c7cd0b";s:8:"operator";s:2:"==";s:5:"value";s:10:"En attente";}}s:8:"allorany";s:3:"all";}s:8:"order_no";i:8;}]]></wp:meta_value>
+			<wp:meta_value><![CDATA[a:15:{s:3:"key";s:19:"field_5b05aeeecd621";s:5:"label";s:5:"Côte";s:4:"name";s:5:"côte";s:4:"type";s:6:"number";s:12:"instructions";s:83:"Indiquer la côte de votre sélection par rapport à votre bookmaker  exemple: 1.85";s:8:"required";s:1:"1";s:13:"default_value";s:0:"";s:11:"placeholder";s:0:"";s:7:"prepend";s:0:"";s:6:"append";s:0:"";s:3:"min";s:0:"";s:3:"max";s:0:"";s:4:"step";s:0:"";s:17:"conditional_logic";a:3:{s:6:"status";s:1:"0";s:5:"rules";a:1:{i:0;a:3:{s:5:"field";s:19:"field_5b05870c7cd0b";s:8:"operator";s:2:"==";s:5:"value";s:10:"En attente";}}s:8:"allorany";s:3:"all";}s:8:"order_no";i:7;}]]></wp:meta_value>
 		</wp:postmeta>
 		<wp:postmeta>
 			<wp:meta_key>xyz_fbap</wp:meta_key>
@@ -241,15 +239,19 @@
 		</wp:postmeta>
 		<wp:postmeta>
 			<wp:meta_key>field_5b0eb8cf0c0a0</wp:meta_key>
-			<wp:meta_value><![CDATA[a:15:{s:3:"key";s:19:"field_5b0eb8cf0c0a0";s:5:"label";s:4:"Mise";s:4:"name";s:4:"mise";s:4:"type";s:6:"number";s:12:"instructions";s:113:"Entrer la mise en euro que vous mettez sur sur pari  max 100€  ("Soyer cohérent avec votre note de confiance")";s:8:"required";s:1:"1";s:13:"default_value";s:0:"";s:11:"placeholder";s:0:"";s:7:"prepend";s:0:"";s:6:"append";s:3:"€";s:3:"min";s:0:"";s:3:"max";s:3:"100";s:4:"step";s:0:"";s:17:"conditional_logic";a:3:{s:6:"status";s:1:"0";s:5:"rules";a:1:{i:0;a:3:{s:5:"field";s:19:"field_5b05870c7cd0b";s:8:"operator";s:2:"==";s:5:"value";s:10:"En attente";}}s:8:"allorany";s:3:"all";}s:8:"order_no";i:7;}]]></wp:meta_value>
+			<wp:meta_value><![CDATA[a:15:{s:3:"key";s:19:"field_5b0eb8cf0c0a0";s:5:"label";s:4:"Mise";s:4:"name";s:4:"mise";s:4:"type";s:6:"number";s:12:"instructions";s:104:"Entrer la mise en euro que vous mettez sur ce pari  max 100€  ("Soyer cohérent avec votre confiance")";s:8:"required";s:1:"1";s:13:"default_value";s:0:"";s:11:"placeholder";s:0:"";s:7:"prepend";s:0:"";s:6:"append";s:3:"€";s:3:"min";s:0:"";s:3:"max";s:3:"100";s:4:"step";s:0:"";s:17:"conditional_logic";a:3:{s:6:"status";s:1:"0";s:5:"rules";a:1:{i:0;a:3:{s:5:"field";s:19:"field_5b05870c7cd0b";s:8:"operator";s:2:"==";s:5:"value";s:10:"En attente";}}s:8:"allorany";s:3:"all";}s:8:"order_no";i:6;}]]></wp:meta_value>
 		</wp:postmeta>
 		<wp:postmeta>
 			<wp:meta_key>field_5b35b0b7df1d2</wp:meta_key>
-			<wp:meta_value><![CDATA[a:14:{s:3:"key";s:19:"field_5b35b0b7df1d2";s:5:"label";s:12:"Adversaire 2";s:4:"name";s:12:"adversaire_2";s:4:"type";s:4:"text";s:12:"instructions";s:0:"";s:8:"required";s:1:"1";s:13:"default_value";s:0:"";s:11:"placeholder";s:0:"";s:7:"prepend";s:0:"";s:6:"append";s:0:"";s:10:"formatting";s:4:"html";s:9:"maxlength";s:0:"";s:17:"conditional_logic";a:3:{s:6:"status";s:1:"0";s:5:"rules";a:1:{i:0;a:3:{s:5:"field";s:19:"field_5b05870c7cd0b";s:8:"operator";s:2:"==";s:5:"value";s:10:"En attente";}}s:8:"allorany";s:3:"all";}s:8:"order_no";i:6;}]]></wp:meta_value>
+			<wp:meta_value><![CDATA[a:14:{s:3:"key";s:19:"field_5b35b0b7df1d2";s:5:"label";s:12:"Adversaire 2";s:4:"name";s:12:"adversaire_2";s:4:"type";s:4:"text";s:12:"instructions";s:48:"Entrer l'adversaire   , "celui à l'extérieur "";s:8:"required";s:1:"1";s:13:"default_value";s:0:"";s:11:"placeholder";s:0:"";s:7:"prepend";s:0:"";s:6:"append";s:0:"";s:10:"formatting";s:4:"html";s:9:"maxlength";s:0:"";s:17:"conditional_logic";a:3:{s:6:"status";s:1:"0";s:5:"rules";a:1:{i:0;a:3:{s:5:"field";s:19:"field_5b05870c7cd0b";s:8:"operator";s:2:"==";s:5:"value";s:10:"En attente";}}s:8:"allorany";s:3:"all";}s:8:"order_no";i:5;}]]></wp:meta_value>
 		</wp:postmeta>
 		<wp:postmeta>
 			<wp:meta_key>field_5b35b0a33813d</wp:meta_key>
-			<wp:meta_value><![CDATA[a:14:{s:3:"key";s:19:"field_5b35b0a33813d";s:5:"label";s:12:"Adversaire 1";s:4:"name";s:12:"adversaire_1";s:4:"type";s:4:"text";s:12:"instructions";s:0:"";s:8:"required";s:1:"1";s:13:"default_value";s:0:"";s:11:"placeholder";s:0:"";s:7:"prepend";s:0:"";s:6:"append";s:0:"";s:10:"formatting";s:4:"html";s:9:"maxlength";s:0:"";s:17:"conditional_logic";a:3:{s:6:"status";s:1:"0";s:5:"rules";a:1:{i:0;a:3:{s:5:"field";s:19:"field_5b05870c7cd0b";s:8:"operator";s:2:"==";s:5:"value";s:10:"En attente";}}s:8:"allorany";s:3:"all";}s:8:"order_no";i:5;}]]></wp:meta_value>
+			<wp:meta_value><![CDATA[a:14:{s:3:"key";s:19:"field_5b35b0a33813d";s:5:"label";s:12:"Adversaire 1";s:4:"name";s:12:"adversaire_1";s:4:"type";s:4:"text";s:12:"instructions";s:45:"Entrer l'adversaire 1  , "celui à domicile "";s:8:"required";s:1:"1";s:13:"default_value";s:0:"";s:11:"placeholder";s:0:"";s:7:"prepend";s:0:"";s:6:"append";s:0:"";s:10:"formatting";s:4:"html";s:9:"maxlength";s:0:"";s:17:"conditional_logic";a:3:{s:6:"status";s:1:"0";s:5:"rules";a:1:{i:0;a:3:{s:5:"field";s:19:"field_5b05870c7cd0b";s:8:"operator";s:2:"==";s:5:"value";s:10:"En attente";}}s:8:"allorany";s:3:"all";}s:8:"order_no";i:4;}]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>field_5b3b4271b77ec</wp:meta_key>
+			<wp:meta_value><![CDATA[a:15:{s:3:"key";s:19:"field_5b3b4271b77ec";s:5:"label";s:20:"Pourcentage Bankroll";s:4:"name";s:20:"pourcentage_bankroll";s:4:"type";s:6:"number";s:12:"instructions";s:102:"Indiquer le pourcentage de mise , ! mettais juste le chiffre le symbole pourcentage ce met tout seul !";s:8:"required";s:1:"0";s:13:"default_value";s:0:"";s:11:"placeholder";s:0:"";s:7:"prepend";s:0:"";s:6:"append";s:1:"%";s:3:"min";s:0:"";s:3:"max";s:0:"";s:4:"step";s:0:"";s:17:"conditional_logic";a:3:{s:6:"status";s:1:"0";s:5:"rules";a:1:{i:0;a:3:{s:5:"field";s:19:"field_5b05870c7cd0b";s:8:"operator";s:2:"==";s:5:"value";s:10:"En attente";}}s:8:"allorany";s:3:"all";}s:8:"order_no";i:10;}]]></wp:meta_value>
 		</wp:postmeta>
 	</item>
 	<item>
@@ -454,6 +456,10 @@
 		<wp:postmeta>
 			<wp:meta_key>field_5b3616c750c0f</wp:meta_key>
 			<wp:meta_value><![CDATA[a:15:{s:3:"key";s:19:"field_5b3616c750c0f";s:5:"label";s:11:"Côte total";s:4:"name";s:11:"côte_total";s:4:"type";s:6:"number";s:12:"instructions";s:34:"Entrer la côte totale du combiné";s:8:"required";s:1:"1";s:13:"default_value";s:0:"";s:11:"placeholder";s:0:"";s:7:"prepend";s:0:"";s:6:"append";s:0:"";s:3:"min";s:0:"";s:3:"max";s:0:"";s:4:"step";s:0:"";s:17:"conditional_logic";a:3:{s:6:"status";s:1:"0";s:5:"rules";a:1:{i:0;a:3:{s:5:"field";s:19:"field_5b3597d7ebc96";s:8:"operator";s:2:"==";s:5:"value";s:10:"En attente";}}s:8:"allorany";s:3:"all";}s:8:"order_no";i:3;}]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>field_5b3b876e5896d</wp:meta_key>
+			<wp:meta_value><![CDATA[a:15:{s:3:"key";s:19:"field_5b3b876e5896d";s:5:"label";s:20:"Pourcentage Bankroll";s:4:"name";s:20:"pourcentage_bankroll";s:4:"type";s:6:"number";s:12:"instructions";s:120:"Non obligatoire , Indiquer le pourcentage de mise , ! mettais juste le chiffre le symbole pourcentage ce met tout seul !";s:8:"required";s:1:"0";s:13:"default_value";s:0:"";s:11:"placeholder";s:0:"";s:7:"prepend";s:0:"";s:6:"append";s:0:"";s:3:"min";s:0:"";s:3:"max";s:0:"";s:4:"step";s:0:"";s:17:"conditional_logic";a:3:{s:6:"status";s:1:"0";s:5:"rules";a:1:{i:0;a:3:{s:5:"field";s:19:"field_5b3597d7ebc96";s:8:"operator";s:2:"==";s:5:"value";s:10:"En attente";}}s:8:"allorany";s:3:"all";}s:8:"order_no";i:24;}]]></wp:meta_value>
 		</wp:postmeta>
 	</item>
 </channel>
