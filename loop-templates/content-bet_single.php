@@ -62,17 +62,10 @@
 
                                 </tbody>
                             </table>
-							<?php 
-								function gains() {
-								$mise = get_field('mise');
-								$cote = get_field('côte');
-								$resultat = $mise * $cote - $mise;
-								echo $resultat;
-	
-							}
-							?>
+						
+							<?php getPourcentBkBet();?>
 							<span>Mise totale :  <?php the_field('mise'); ?>€ </span> <br>
-							<span> Gains potentiels : <?php gains();?> €</span>
+							<span> Gains potentiels : <?php getGainPotentialSimple();?> €</span>
                         </div>
 						
 

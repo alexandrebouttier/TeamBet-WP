@@ -12,7 +12,7 @@
     <?php
 
     foreach (get_the_category() as $category) {
-        if ('Pronostic combiné' OR 'Pronostic' == $category->cat_name) {
+        if ('Team' !==  $category->cat_name) {
             ?>
                     <div class="betpost">
                         <header>
@@ -118,5 +118,6 @@
         }
 
     }
+
     ?>
 

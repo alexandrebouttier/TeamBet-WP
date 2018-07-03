@@ -41,9 +41,9 @@ $container = get_theme_mod('understrap_container_type');
     <meta property="og:locale" content="fr_FR"/>
     <meta property="og:url" content="https://www.teambet.fr"/>
     <meta property="og:type" content="website"/>
-	<meta name="twitter:image:src" content="https://www.teambet.fr/wp-content/uploads/2018/06/twitter.jpg">
+	<meta name="twitter:image:src" content="https://www.teambet.fr/wp-content/uploads/2018/og-image.png">
 
-	<meta name="twitter:image" content="https://www.teambet.fr/wp-content/uploads/2018/06/twitter.jpg" />
+	<meta name="twitter:image" content="https://www.teambet.fr/wp-content/uploads/2018/og-image.png" />
     <meta property="og:image" content="https://www.teambet.fr/wp-content/uploads/2018/og-image.png"/>
     <meta property="og:image:type" content="image/png"/>
     <meta property="og:image:alt" content="Logo du site web Team-Bet"/>

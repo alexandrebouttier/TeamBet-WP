@@ -106,8 +106,9 @@ function getGainBet(){
 			$gain = - $mise;
 		}
 		else{
-			$gain = $mise;
+			$gain = $mise*$cote-$mise;
 		}
+	$gain = number_format($gain,2);
 	return $gain;
 }
 
@@ -121,8 +122,9 @@ function getGainBetCombi(){
 			$gain = - $mise;
 		}
 		else{
-			$gain = $mise;
+			$gain = $mise*$cote-$mise;
 		}
+	$gain = number_format($gain,2);
 	return $gain;
 }
 // Fonction qui retourne une class CSS en fonction du résultat du pronostic
@@ -141,27 +143,30 @@ function getClassGainBet(){
     }
 	echo $class;
 }
+function getPourcentBkBet(){
+	$bk = get_field('pourcentage_bankroll');
+	if($bk):
+	?>
+	<span>Pourcentage bankroll : <?php the_field('pourcentage_bankroll'); ?>%</span> <br>
+	<?php endif;
+}	
+function getGainPotentialSimple() {
+	$mise = get_field('mise');
+	$cote = get_field('côte');
+	$gainPotential = $mise * $cote - $mise;
+	$gainPotential = number_format($gainPotential,2);
+	echo $gainPotential;
+}	
 
-function isCombi(){
-	
-	if ('Pronostic combiné' == $category->cat_name){
-		$resultat = true;
-	}
-	else{
-		$resultat = false;
-	}
-	return $resultat;
-}
-function isSimple(){
-	
-	if ('Pronostic' == $category->cat_name){
-		$resultat = true;
-	}
-	else{
-		$resultat = false;
-	}
-	return $resultat;
-}
+function getGainPotentialCombi() {
+	$mise = get_field('mise');
+	$cote = get_field('côte_total');
+	$gainPotential = $mise * $cote - $mise;
+	$gainPotential = number_format($gainPotential,2);
+	echo $gainPotential;
+}	
+						
+
 // Ajouter des champs personnalisés dans le profil utilisateur de WordPress
 add_filter('user_contactmethods','wpm_user_fields',10,1);
 

@@ -55,7 +55,7 @@ $container   = get_theme_mod( 'understrap_container_type' );
 								Voir mes stats:
 							</h5>
 							<a href="<?php echo $curauth->betbankroll; ?>">
-								<img src="https://www.bet-bankroll.com/images/bet-bankroll-v4.png" height="200" width="200">
+								<img style="background-color:black;"src="https://www.bet-bankroll.com/images/bet-bankroll-v4.png" height="200" width="200">
 							</a>
 						</div>
 						<?php endif; ?>
