@@ -1,5 +1,7 @@
 # Theme Wordpress Team-bet [Theme pour team de tipsters]
 
+![alt text](https://github.com/alexandrebouttier/teambet/blob/master/github/screen.theme.PNG)
+
 ![alt text](https://github.com/alexandrebouttier/teambet/blob/master/github/screen_dash.PNG)
 
 ### Theme Wordpress parent: https://understrap.com/
@@ -21,4 +23,6 @@ Yoast SEO :https://fr.wordpress.org/plugins/wordpress-seo/ <br>
 Aprés installation et activation de l'extension , <br>
 dans le menu de Wordpress , cliqué sur "ACF" > "Outils" <br>
 importer le fichier "advanced-custom-field-export.xml" qui se trouve à la racine du dossier du théme <br>
+
+
 
