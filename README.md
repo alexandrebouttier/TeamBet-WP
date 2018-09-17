@@ -1,5 +1,7 @@
 # Theme Wordpress Team-bet [Theme pour team de tipsters]
 
+https://github.com/alexandrebouttier/teambet/blob/master/github/screen_dash.PNG
+
 ### Theme Wordpress parent: https://understrap.com/
 
 ## Plugins nécessaire pour le fonctionnement du théme:
