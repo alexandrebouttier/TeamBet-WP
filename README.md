@@ -12,3 +12,11 @@ Popups - WordPress Popup :https://fr.wordpress.org/plugins/popups/ <br>
 WP Twitter Auto Publish : https://fr.wordpress.org/plugins/twitter-auto-publish/ <br>
 WP User Avatar : https://fr.wordpress.org/plugins/wp-user-avatar/ <br>
 Yoast SEO :https://fr.wordpress.org/plugins/wordpress-seo/ <br>
+
+
+# Importation des champs personnalisé ACF "Advanced Custom Fields"
+
+Aprés installation et activation de l'extension , <br>
+dans le menu de Wordpress , cliqué sur "ACF" > "Outils" <br>
+importer le fichier "advanced-custom-field-export.xml" qui se trouve à la racine du théme <br>
+
