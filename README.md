@@ -1,4 +1,4 @@
-## Theme Wordpress Team-bet [Theme pour team de tipsters]
+# Theme Wordpress Team-bet [Theme pour team de tipsters]
 
 ### Theme Wordpress parent: https://understrap.com/
 
@@ -14,7 +14,7 @@ WP User Avatar : https://fr.wordpress.org/plugins/wp-user-avatar/ <br>
 Yoast SEO :https://fr.wordpress.org/plugins/wordpress-seo/ <br>
 
 
-# Importation des champs personnalisé ACF "Advanced Custom Fields"
+## Importation des champs personnalisé ACF "Advanced Custom Fields"
 
 Aprés installation et activation de l'extension , <br>
 dans le menu de Wordpress , cliqué sur "ACF" > "Outils" <br>
