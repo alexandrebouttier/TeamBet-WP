@@ -1,4 +1,4 @@
-## Theme Wordpress Team-bet [Team team de tipsters]
+## Theme Wordpress Team-bet [Theme pour team de tipsters]
 
 ### Theme Wordpress parent: https://understrap.com/
 
